@@ -1,0 +1,65 @@
+.footer-container .row {
+  display: block;
+}
+
+.footer {
+  background-color: #C4C4C4;
+  ;
+}
+
+.logo figure {
+  text-align: center;
+}
+
+.logo figure img {
+  width: 150px;
+  padding-top: 10px;
+  float: left;
+  margin-left: 30px;
+}
+
+.icons-container {
+  display: flex;
+  align-items: flex-end;
+  margin: auto;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+@media (min-width: 750px) {
+  .footer {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+
+  }
+
+  .logo figure {
+    margin: 30px 0;
+  }
+}
+
+
+.col-2 {
+  margin-left: 43.333333%;
+  padding-top: 39px;
+}
+
+.icon-social {
+  padding-left: 10px;
+  width: 80px;
+}
+
+
+.header-color {
+  color: #1c1c1c;
+}
+
+.wtf {
+  margin: 0px;
+}
+
+
+.pad {
+  margin-top: 100px;
+}

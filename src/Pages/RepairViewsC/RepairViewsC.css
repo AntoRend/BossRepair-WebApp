@@ -1,0 +1,26 @@
+/* style="width: 18rem; */
+
+.text-repair-3 {
+  width: 200px;
+}
+
+.divid-text-2 {
+  border: 2px solid #D0D2D3;
+  width: 400px;
+}
+
+.font-color {
+  background-color: #ECEEEF;
+}
+
+ .btn-repair-card {
+  margin-left: 150px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .btn-repair-card {
+ margin-left: 0px;
+  }
+
+}

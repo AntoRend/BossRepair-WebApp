@@ -1,0 +1,11 @@
+.boton-repair {
+  margin: auto;
+  margin-top: 50px;
+}
+
+
+/* ---------------------------------------movil---------------------------------- */
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+}

@@ -1,0 +1,63 @@
+.repairmanPostDetails{
+  background-color: #E5E5E5;
+  align-content: center;
+}
+
+.repairmanTitleDiv{
+  display: flex;
+  margin-right : 30px;
+  margin-left : 30px;
+  width: 100%;
+  border-bottom: 2px outset black;
+}
+
+.repairmanTitleText{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.imgRow{
+  justify-content: center;
+}
+
+.imgDevice{
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.imgDeviceDesktop{
+  max-width: 90%;
+  max-height: 90%;
+}
+
+@media(min-width: 576px){
+  .imgDevice{
+    display: none;
+  }
+}
+
+@media(max-width: 576px){
+  .imgDeviceDesktop{
+    display: none;
+  }
+}
+
+.customerPostDetailsTitle{
+  text-align: left;
+}
+
+.customerPostDetailsText{
+  text-align: left;
+  font-size: x-large;
+}
+
+.customerPostDetailsTextarea{
+  text-align: left;
+  font-size: x-large;
+}
+
+
+.customerPostDetails{
+  padding-left: 10%;
+  padding-right: 10%;
+}

@@ -1,0 +1,43 @@
+.repairmanInfo{
+  background-color: #E5E5E5;
+  align-content: center;
+}
+
+.repairmanNameDiv{
+  display: flex;
+  margin-right : 30px;
+  margin-left : 30px;
+  width: 100%;
+  border-bottom: 2px outset black;
+}
+
+.repairmanNameText{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.repairmanContactInfoDiv{
+  width: 100%;
+}
+.imgRepairman{
+  border-radius: 5px;
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.repairmanInfoText{
+  text-align: start;
+  font-size: x-large;
+  margin-bottom: 0%;
+  margin-left: 10%;
+  word-break: break-all;
+}
+
+.customerCardCol{
+  padding-right:5%;
+}
+
+.customerCardRow{
+  margin-right: 5%;
+
+}

@@ -1,0 +1,32 @@
+.clientCardContainer{
+  margin-bottom: 5%;
+}
+
+.clientCardRow{
+  background-color: white;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.imgCustomerCard{
+  border-radius: 5px;
+  width: 70%;
+  height: 70%;
+}
+
+.customerName{
+  border-bottom: 2px outset black;
+}
+
+.customerText{
+  margin: 0;
+  font-size: medium;
+}
+
+.customerCardColTwo{
+  align-content: center;
+}
+
+.customerCardButton{
+  align-content: space-around
+}

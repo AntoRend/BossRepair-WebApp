@@ -1,0 +1,120 @@
+
+
+.banner_info {
+  /* margin: 10rem 0; */
+  text-align: initial;
+}
+.banner_assets {
+  display: flex;
+  flex-direction: column;
+}
+.banner_img {
+  width: 100%;
+  background-image: url('./Img/banner.jpg');
+  background-size: cover;
+  padding: 20%;
+  margin: 1rem auto;
+  width: 90% !important;
+}
+.mobile-button {
+  display: initial;
+}
+.desktop-button {
+  display: none;
+}
+.benefits_text {
+  margin-left: 10px;
+  text-align: initial;
+}
+.benefits_list {
+  flex-direction: column;
+}
+.bossrepair__info {
+  flex-direction: column-reverse;
+}
+.bossrepair__info_text {
+  text-align: initial;
+}
+.user__info_text {
+  text-align: initial;
+  margin-left: 10px;
+}
+.user__info_cards .step-card {
+  width: 90%;
+  margin: auto;
+  color: antiquewhite;
+  height: 10rem;
+  background-color: #2D2E33;
+  margin-bottom: 5px;
+}
+.repair__info {
+  background-image: url('./Img/repairInfo-movil.jpg');
+  background-size: cover;
+  padding: 5%;
+}
+.repair__info_text {
+  text-align: initial;
+  color: antiquewhite;
+  width: 55%;
+  margin-top: 10rem;
+}
+.repair__info_text h2 {
+
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .banner {
+    justify-content: flex-end;
+  }
+  .banner_info {
+    margin-top: 5rem;
+  }
+  .banner_img {
+    width: 100% !important;
+    padding: 10rem 0;
+  }
+  .desktop-button{
+    display: initial;
+  }
+  .mobile-button {
+    display: none;
+  }
+  .benefits {
+    margin: 5rem 0;
+  }
+  .benefits_text {
+    text-align: center;
+  }
+  .benefits_list {
+    flex-direction: row;
+  }
+  .bossrepair__info {
+    flex-direction: row;
+  }
+  .bossrepair__info_text {
+    margin-top: 2rem;
+  }
+  .user__info_text {
+    text-align: center;
+  }
+  .repair__info {
+    background-image: url('./Img/repair-info-desk.jpg');
+    background-size: cover;
+    padding: 5%;
+    justify-content: flex-end;
+  }
+  .repair__info_text {
+    text-align: end;
+    margin: 5rem;
+  }
+  .repair__info_text h2 {
+    font-size: 3rem;
+  }
+ }

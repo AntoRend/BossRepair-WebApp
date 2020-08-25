@@ -1,0 +1,132 @@
+body {
+  background-color: #FFF7F4;
+}
+
+.card-body {
+  background-color: #ECEEEF;
+}
+
+.name_User {
+  display: -webkit-box;
+}
+
+.color-1 {
+  background-color: aqua;
+}
+
+.solid-divid {
+  border:2px solid #EB5424;
+  width: 50%;
+  
+}
+
+.name-user {
+  text-align: ;
+    width: 400px;
+    margin-left: 400px;
+}
+
+.color-2 {
+  background-color: #df1d0f;
+
+}
+
+.color_text-card {
+  color: black;
+}
+
+.botton-cards {
+  display: inline;
+}
+
+.color_linea {
+  background-color: #FFF7F4;
+  text-align: left;
+}
+
+.font-text-user {
+  background-color: #D0D2D3;
+  padding: 4px 0px 1px 47px;
+  margin: -21px -20px 0px -20px;
+  text-align: left;
+}
+
+.btn-cards {
+  text-align: right;
+  padding-top: 40px;
+}
+
+.btn-outline-danger {
+  width:120px;
+  margin-left: 30px;
+}
+
+.cards-user-v {
+  height: 200px;
+}
+
+.card-text {
+  text-align: left;
+  padding: 10px 0px 0px 0px;
+}
+
+.text-cards {
+  margin-top: 5px;
+}
+
+.text-dep {
+  margin: 75px 0 25px 0px;
+}
+
+
+/* ---------------------------------------movil---------------------------------- */
+@media (min-width: 320px) and (max-width: 480px) {
+
+.color-1 {
+  width: 100%;
+  background-color: #EB5424;
+}
+
+
+.user-boton {
+  margin-left: -188px;
+}
+
+}
+
+
+.text-ali {
+  text-align: left;
+}
+
+
+.solid-divi-cards {
+  border: 1px solid ;
+}
+
+
+.user-boton {
+  margin-left: 188px;
+}
+
+
+.imangen-user {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+}
+
+.imangen-star {
+  padding: 75px 5px 5px 5px;
+}
+/* 
+.color-font {
+  background-color: #219ad6;
+} */
+
+
+.cards-user-3 {
+  display: -webkit-inline-box;
+  margin-top: 60px;
+}

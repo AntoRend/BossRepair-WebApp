@@ -1,0 +1,49 @@
+
+                                 -----------------------Introduccion-------------------------
+Buenas noches a todos, somos la celula de desarrollo a cargo del proyecto de Boss Repair,
+y hoy les precentaromos este proyecto.
+
+
+este proyecto esta basado para ayudar a la reparacion de electrodomesticos y reactivar la economia local 
+ya que en estos timpos de cuarentena se a perdido la actividad de los micro-negocios.
+
+tambien esta dirigido a al medio ambiente, por que entre menos alla basura electronica sera menos el impacto 
+de residuos toxicos.
+
+Una ves dicho esto pasemos a la funcionalidad y recursos adquidos para el desarrollos de dicha aplicacion.
+
+
+
+
+ 
+-----------------------------------------Contendido-----------------------------------------------------
+
+
+de primera instancia se uso SCRUM como metodologia agil para el desarrollo de los split y no se que madre ..
+
+
+
+Para la realizacion de los mockup y bocetos y el seguimientos del desarrollo del proyecto se
+se utilizon tanto FIGMA ya que es una herramienta facil de usar
+ y versatil como NOTION, que tambien es facil de usar.
+
+tambie se utilizo GITHUB como versionador.
+
+
+tambien utilizamos las tecnologias web para desarrollar esta aplicacion, como fueron REACT.-
+REACT nos permite hacer nuestro aplicacion en componetes, que significa eso ? que podemos reotilizar 
+los componetes en distintas vistas, eso es algo muy util en la realizacion de aplicacion.
+
+ para la arquitectura del sitio, MONGO BD como base de datos e IBM CLOUD como proveedor de nube 
+para cargar el proyecto.
+
+
+
+
+
+
+
+
+Muchas gracias por su timpo y seria todo de nuestra parte ... si no hay mas dudas o preguntas ...
+
+
