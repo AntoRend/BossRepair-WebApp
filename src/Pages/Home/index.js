@@ -7,6 +7,7 @@ import UserInfo from './Components/UserInfo'
 import RepairInfo from './Components/RepairInfo'
 import './Home.css'
 import QuotationModal from '../../Components/QuotationModal'
+import FormM from '../../Components/formM'
 
 // import RegisterRepair from './Components/RegisterRepair'
 
@@ -28,6 +29,7 @@ export default class Home extends React.Component {
         <UserInfo />
         <RepairInfo />
         {/* <RegisterRepair /> */}
+        {/* <FormM /> */}
      
       </div>
     )
