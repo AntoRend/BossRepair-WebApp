@@ -8,6 +8,8 @@ import RepairInfo from './Components/RepairInfo'
 import './Home.css'
 import QuotationModal from '../../Components/QuotationModal'
 
+// import RegisterRepair from './Components/RegisterRepair'
+
 export default class Home extends React.Component {
   constructor (props) {
     super(props)
@@ -25,6 +27,8 @@ export default class Home extends React.Component {
         <BossRepairInfo />
         <UserInfo />
         <RepairInfo />
+        {/* <RegisterRepair /> */}
+     
       </div>
     )
   }
