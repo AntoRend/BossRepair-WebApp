@@ -5,7 +5,6 @@ import Walk from './Img/caminar.svg'
 
 const QuotationModal = (props) => {
   const {
-    buttonLabel,
     className
   } = props
 
@@ -15,18 +14,18 @@ const QuotationModal = (props) => {
 
   return (
     <div>
-      <Button color='danger' onClick={toggle}>{buttonLabel}</Button>
+      <Button color='danger' onClick={toggle}>Ver detalle</Button>
       <Modal
         isOpen={modal} modalTransition={{ timeout: 700 }} backdropTransition={{ timeout: 1300 }}
         toggle={toggle} className={className + 'modal-lg'}
       >
         <ModalHeader toggle={toggle}>
           <h4>Respuesta</h4>
-          <p>Nombre del dispositivo</p>
+          <p>Reparación</p>
         </ModalHeader>
         <ModalBody className='d-md-flex'>
           <div className='data-quote'>
-            <h4>Nombre del reparador</h4>
+            <h4>{props.data.idRepairman}</h4>
             <CalificationIndicator
               serviceRating='3'
             />
@@ -36,9 +35,9 @@ const QuotationModal = (props) => {
             </div>
             <Card body>
               <CardTitle>Descripción</CardTitle>
-              <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+              <CardText>{props.data.answer}</CardText>
             </Card>
-            <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+            <CardText>Precio ${props.data.cost}</CardText>
             <p><small>Si deseas que el reparador vaya a tu domicilio</small></p>
             <div class='form-group form-check'>
               <input type='checkbox' class='form-check-input' id='exampleCheck1' />

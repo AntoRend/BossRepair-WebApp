@@ -3,20 +3,11 @@ import {
   Card, Button, CardHeader, CardFooter, CardBody,
   CardTitle, CardText
 } from 'reactstrap'
+import QuotationModal from '../QuotationModal'
 
 const InfoCard = (props) => {
   const { data: { answers } } = props
   console.log(answers)
-
-  // const cards =
-
-  // const renderAnswers = () => {
-  //   if (props.data) {
-  //     cards()
-  //   } else {
-  //     return console.log('')
-  //   }
-  // }
 
   return (
     <div>
@@ -34,7 +25,9 @@ const InfoCard = (props) => {
               </div>
               <div className='d-flex justify-content-end'>
                 <Button className='mx-2 btn btn-danger'>Go somewhere</Button>
-                <Button>Go somewhere</Button>
+                <QuotationModal
+                  data={item}
+                />
               </div>
             </CardBody>
             <CardFooter>BossRepair</CardFooter>

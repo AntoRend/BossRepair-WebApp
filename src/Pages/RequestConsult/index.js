@@ -3,7 +3,7 @@ import { Container, Row, Col, Card, CardTitle } from 'reactstrap'
 import axios from 'axios'
 
 import RepairData from '../../Components/RepairData'
-import InfoCard from '../../Components/InfoCard'
+import InfoCard from '../../Components/InfoCardConsultView'
 // import Button from '../../Components/Button'
 
 const RequestConsult = (props) => {

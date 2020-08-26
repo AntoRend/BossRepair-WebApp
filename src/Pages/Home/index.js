@@ -6,7 +6,6 @@ import BossRepairInfo from './Components/BossRepairInfo'
 import UserInfo from './Components/UserInfo'
 import RepairInfo from './Components/RepairInfo'
 import './Home.css'
-import QuotationModal from '../../Components/QuotationModal'
 
 export default class Home extends React.Component {
   constructor (props) {
@@ -19,7 +18,6 @@ export default class Home extends React.Component {
   render () {
     return (
       <div>
-        <QuotationModal />
         <Banner />
         <BenefitsList />
         <BossRepairInfo />

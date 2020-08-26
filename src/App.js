@@ -14,12 +14,11 @@ import Footer from './Components/Footer'
 
 // Pages
 import Home from './Pages/Home'
-import Register from './Pages/Register'
+import Register from './Pages/RegisterUser'
 import RequestConsult from './Pages/RequestConsult'
 
 // Mau
-import UserView from './Pages/UserView'
-import ModalUser from './Pages/ModalUser'
+import UserView from './Pages/Dashboard'
 import RepairViewsC from './Pages/RepairViewsC'
 import RepairUserView from './Pages/RepairUserView'
 import RepairViews from './Pages/RepairViews'
