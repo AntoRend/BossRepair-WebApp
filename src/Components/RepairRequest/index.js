@@ -19,6 +19,7 @@ const ModalExample = (props) => {
   const toggle = () => setModal(!modal)
   const closeBtn = <button className='close' onClick={toggle}>&times;</button>
 
+  // funciones para formulario
   const { register, handleSubmit } = useForm()
   const onSubmit = (data) => {
     // console.log(data)
