@@ -7,7 +7,7 @@ import UserInfo from './Components/UserInfo'
 import RepairInfo from './Components/RepairInfo'
 import './Home.css'
 import QuotationModal from '../../Components/QuotationModal'
-import FormM from '../../Components/formM'
+import FormM from '../../Components/FormM'
 
 // import RegisterRepair from './Components/RegisterRepair'
 
