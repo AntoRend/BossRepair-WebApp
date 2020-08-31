@@ -55,7 +55,7 @@
 .repair__info_text {
   text-align: initial;
   color: antiquewhite;
-  width: 55%;
+  /* width: 55%; */
   margin-top: 10rem;
 }
 .repair__info_text h2 {
@@ -117,4 +117,23 @@
   .repair__info_text h2 {
     font-size: 3rem;
   }
+ }
+
+
+ /* ------------------------------NEWS------------------ */
+
+ .text-landig {
+   color: white;
+ }
+
+ .text-reapir {
+   color: white;
+ }
+
+ .title-repair {
+   color: antiquewhite;
+ }
+
+ .menu-all {
+   background-color: #c4c4c4;
  }
