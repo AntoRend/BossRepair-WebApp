@@ -17,7 +17,7 @@ const RequestConsult = (props) => {
   async function fetchData () {
     let userEmail = window.location.search
     userEmail = userEmail.substring(1)
-    console.log(userEmail)
+    // console.log(userEmail)
     const response = await axios.get(
     `http://localhost:8080/repair-order/info-repairs/${userEmail}`)
     setPosts(response.data.data.Repairs)
@@ -25,7 +25,6 @@ const RequestConsult = (props) => {
 
   const renderInfo = () => {
     if (repair === '') {
-      console.log(repair)
     } else {
       return (
         <div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form, FormGroup, Label, Input, FormText } from 'reactstrap'
+import { Form, FormGroup, Label } from 'reactstrap'
 import { useForm } from 'react-hook-form'
 import Button from '../Button'
 import axios from 'axios'
@@ -9,12 +9,12 @@ const RegisterRepair = () => {
   const { register, handleSubmit } = useForm()
   const onSubmit = (data) => {
     console.log(data)
-    axios.post('http://localhost:8080/users/signup', data)
+    axios.post('http://localhost:8080/repairmen/signup', data)
       .then(function (response) {
         console.log(response)
         swal({
           title: 'Listo!',
-          text: 'Puedes consultar las respuestas a tu reparación con tu correo',
+          text: 'Texto por modificar',
           icon: 'success',
           button: 'Entendido'
         })
@@ -34,34 +34,24 @@ const RegisterRepair = () => {
       <div className='form-container col-12 d-md-flex'>
         <div className='col-12 col-md-6'>
           <FormGroup>
-            <Label for='name'>Nombre</Label>
+            <Label for='name'>Nombre o Razón social</Label>
             <input
               class='form-control'
               type='text'
-              name='firstName'
+              name='fullName'
               placeholder='Nombre'
               ref={register}
             />
           </FormGroup>
           <FormGroup>
-            <Label for='lastName'>Apellido</Label>
-            <input
-              class='form-control'
-              type='text'
-              name='lastName'
-              placeholder='Apellido'
-              ref={register}
-            />
-          </FormGroup>
-          <FormGroup>
-            <Label for='exampleDate'>Fecha</Label>
-            <input
-              class='form-control'
-              type='date'
-              name='birthDate'
-              placeholder='dd/mm/aa'
-              ref={register}
-            />
+            <Label for='lastName'>Especialidad</Label>
+            <select class='form-control' name='specialty' id='exampleSelect' ref={register} required>
+              <option>Selecciona</option>
+              <option>Electrónica</option>
+              <option>Electricidad</option>
+              <option>Línea Blanca</option>
+              <option>Plomería</option>
+            </select>
           </FormGroup>
           <FormGroup>
             <Label for='exampleEmail'>Correo Electronico</Label>
@@ -84,8 +74,8 @@ const RegisterRepair = () => {
               ref={register}
             />
           </FormGroup>
-          {/* <FormGroup>
-            <Label for='examplePassword'>Password</Label>
+          <FormGroup>
+            <Label for='examplePassword'>Confirmacion contraseña</Label>
             <input
               class='form-control'
               type='password'
@@ -93,7 +83,7 @@ const RegisterRepair = () => {
               placeholder='password '
               ref={register}
             />
-          </FormGroup> */}
+          </FormGroup>
         </div>
         <div className='col-12 col-md-6'>
           <FormGroup>
@@ -146,123 +136,3 @@ const RegisterRepair = () => {
 }
 
 export default RegisterRepair
-
-
-
-// import React, { Component } from "react";
-// import { useForm } from 'react-hook-form'
-// import Button from '../Button'
-// import axios from 'axios'
-// import swal from 'sweetalert'
-// import { Form, FormGroup, Label, Input, FormText } from 'reactstrap'
-
-
-
-// class RegisterForm extends Component {
-//   constructor(props) {
-//     super(props);
-
-//     this.state = {
-//       nombre: "",
-//       correo: "",
-//       edad: "",
-//       mensajeNombre: "",
-//       mensajeCorreo: "",
-//       mensajeEdad: "",
-//       invalidNombre: false,
-//       invalidCorreo: false,
-//       invalidEdad: false,
-//     };
-//     this.onChange = this.onChange.bind(this);
-//     this.enviarAlaBD = this.enviarAlaBD.bind(this);
-//   }
-
-//   onChange = (e) => {
-//     const { name, value } = e.target;
-//     this.setState({
-//       [name]: value,
-//     });
-//   };
-//   enviarAlaBD = (e) => {
-//     e.preventDefault();
-//     let valido = true;
-//     if (this.state.nombre === "") {
-//       this.setState({
-//         invalidNombre: true,
-//         mensajeNombre: "El campo nombre es obligatorio, indica tu nombre",
-//       });
-//       valido = false;
-//     }
-//     if (this.state.correo === "") {
-//       this.setState({
-//         invalidCorreo: true,
-//         mensajeCorreo: "Indica tu dirección de correo",
-//       });
-//       valido = false;
-//     }
-//     if (this.state.edad === "") {
-//       this.setState({
-//         invalidEdad: true,
-//         mensajeEdad: "Indica tu edad",
-//       });
-//       valido = false;
-//     }
-//     if (valido) {
-//       //Enviarlo a la base de datos o a otro componente
-//       console.log("Se envian los datos " + JSON.stringify(this.state));
-//     }
-//   };
-//   render() {
-//     return (
-//       <div>
-//         <Row>
-//           <Col xs="3"></Col>
-//           <Col xs="6">
-//             <h2>Registro de Participantes</h2>
-//             <Form onSubmit={this.enviarAlaBD}>
-//               <FormGroup>
-//                 <Label>Nombre</Label>
-//                 <Input
-//                   type="text"
-//                   name="nombre"
-//                   value={this.state.nombre}
-//                   onChange={this.onChange}
-//                   invalid={this.state.invalidNombre}
-//                 />
-//                 <FormFeedback>{this.state.mensajeNombre}</FormFeedback>
-//               </FormGroup>
-//               <FormGroup>
-//                 <Label>Correo</Label>
-//                 <Input
-//                   type="email"
-//                   name="correo"
-//                   value={this.state.correo}
-//                   onChange={this.onChange}
-//                   invalid={this.state.invalidCorreo}
-//                 />
-//                 <FormFeedback>{this.state.mensajeCorreo}</FormFeedback>
-//               </FormGroup>
-//               <FormGroup>
-//                 <Label>Edad</Label>
-//                 <Input
-//                   type="text"
-//                   name="edad"
-//                   className="col-2"
-//                   value={this.state.edad}
-//                   onChange={this.onChange}
-//                   invalid={this.state.invalidEdad}
-//                 />
-//                 <FormFeedback>{this.state.mensajeEdad}</FormFeedback>
-//               </FormGroup>
-//               <FormGroup>
-//                 <Button color="success">Guardar</Button>
-//               </FormGroup>
-//             </Form>
-//           </Col>
-//         </Row>
-//       </div>
-//     );
-//   }
-// }
-
-// export default RegisterForm;

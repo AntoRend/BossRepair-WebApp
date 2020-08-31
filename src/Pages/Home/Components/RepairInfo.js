@@ -1,5 +1,6 @@
 import React from 'react'
 import { Row, Col } from 'reactstrap'
+import { Link } from 'react-router-dom'
 import Button from '../../../Components/Button'
 
 const RepairInfo = () => {
@@ -9,9 +10,7 @@ const RepairInfo = () => {
         <div className='repair__info_text'>
           <h2>Texto para el reparador</h2>
           <p>Texto para el reparador</p>
-          <Button
-            text='Button'
-          />
+          <Link to='/registro-reparador'><Button text='Button' /></Link>
         </div>
       </Col>
     </Row>

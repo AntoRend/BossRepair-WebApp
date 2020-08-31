@@ -6,7 +6,7 @@ import {
 import QuotationModal from '../QuotationModal'
 
 const InfoCard = (props) => {
-  const { data: { answers } } = props
+  const { data: { answers, _id } } = props
   console.log(answers)
 
   return (
@@ -27,6 +27,7 @@ const InfoCard = (props) => {
                 <Button className='mx-2 btn btn-danger'>Go somewhere</Button>
                 <QuotationModal
                   data={item}
+                  _id={_id}
                 />
               </div>
             </CardBody>
