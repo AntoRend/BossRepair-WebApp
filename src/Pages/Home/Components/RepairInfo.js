@@ -8,14 +8,14 @@ const RepairInfo = () => {
       <Col className="col-md-6">
         <div className="repair__info_text">
           <h3 className="title-repair">
-            Buscas una aplicacion que te ayude ampliar tus horizontes ?{" "}
+            Buscas una aplicacion que te ayude ampliar tus horizontes ?
           </h3>
           <br></br>
-          <h3 className="card-text">
-            que esteperas ? Sé parte de este gran grupo, y trabaja sin limites !
+          <h3 className="card-text-t">
+            Que esteperas ? Sé parte de este gran grupo, y trabaja sin limites !
           </h3>
           <br></br>
-          <Button text="Button" />
+          <Button text="Button"/>
         </div>
       </Col>
     </Row>

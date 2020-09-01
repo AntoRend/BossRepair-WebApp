@@ -15,9 +15,8 @@ import estrellas from '../img/estrellas.png'
 function UserView() {
   return (
     <div className="col-md-12 col-ms-12">
-      <h1 className="name-user">Jerome Isma ea</h1>
-        <hr className="solid-divid"></hr>
-      
+      <h1 className="nameUser">Jerome Isma ea</h1>
+      <hr className="solid-divid"></hr>
 
       <div className="container">
         <div className="row">
@@ -34,9 +33,11 @@ function UserView() {
                     <p className="card-text">
                       Carl Cox@gmail.com
                       <br></br>
-                      Domicilio
                       <br></br>
-                      Ciudad
+                      Domicilio:
+                      <br></br>
+                      <br></br>
+                      Ciudad:
                     </p>
                     <img
                       src={estrellas}
@@ -54,13 +55,13 @@ function UserView() {
               <div className="col mb-4">
                 <div className="card color-font">
                   <div className="card-body">
-                    <h5 className="card-title text-ali">Reparacion</h5>
+                    <h6 className="card-title text-ali">Lap Top Lenovo Gamer</h6>
                     <p className="card-text">
-                      This is a simple hero unit, a simple jumbotron-style...
+                     
                     </p>
                     <hr className="solid-divi-cards"></hr>
 
-                    <p className="text-cards">texto de reñeno</p>
+                    <p className="card-text"> se le incrementa la memoria ram, junto con un disco con mayor capacidad de almacenamiento</p>
                     <button
                       type="button"
                       className="user-boton btn btn-outline-danger"
@@ -75,13 +76,14 @@ function UserView() {
               <div className="col mb-4">
                 <div className="card color-font">
                   <div className="card-body">
-                    <h5 className="card-title text-ali">Reparacion</h5>
-                    <p className="card-text">
-                      This is a simple hero unit, a simple jumbotron-style...
-                    </p>
+                    <h5 className="card-title text-ali">IPhone SE</h5>
+                    <p className="card-text"></p>
                     <hr className="solid-divi-cards"></hr>
 
-                    <p className="text-cards ">texto de reñeno</p>
+                    <p className="card-text">
+                      Se el hace cambio total de desplay, se cambia por uno
+                      generico del mismo modelo
+                    </p>
                     <button
                       type="button"
                       className="user-boton btn btn-outline-danger"
@@ -99,13 +101,14 @@ function UserView() {
               <div className="col mb-4">
                 <div className="card color-font">
                   <div className="card-body">
-                    <h5 className="card-title text-ali">Reparacion</h5>
-                    <p className="card-text">
-                      This is a simple hero unit, a simple jumbotron-style...
-                    </p>
+                    <h5 className="card-title text-ali">LG K61</h5>
+                    <p className="card-text"></p>
                     <hr className="solid-divi-cards"></hr>
 
-                    <p className="text-cards">texto de reñeno</p>
+                    <p className="card-text">
+                      Se cambia la pila por sobrecalentamiento y se remplaza por
+                      uno chafa{" "}
+                    </p>
                     <button
                       type="button"
                       className="user-boton btn btn-outline-danger"
@@ -120,13 +123,13 @@ function UserView() {
               <div className="col mb-4">
                 <div className="card color-font">
                   <div className="card-body">
-                    <h5 className="card-title text-ali">Reparacion</h5>
+                    <h5 className="card-title text-ali">Teclado Spectra-Gamer</h5>
                     <p className="card-text">
-                      This is a simple hero unit, a simple jumbotron-style...
+                      
                     </p>
                     <hr className="solid-divi-cards"></hr>
 
-                    <p className="text-cards">texto de reñeno</p>
+                    <p className="card-text">se le cambi los botones A-S-D-W por desgaste y resorte roto. Se repmplaza por genericos !</p>
                     <button
                       type="button"
                       className="user-boton btn btn-outline-danger"
