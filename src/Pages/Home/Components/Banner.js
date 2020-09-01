@@ -15,13 +15,13 @@ const Banner = () => {
   return (
     <div className="banner d-md-flex my-5">
       <Col className="col-12 col-md-5 banner_info">
-        <h1>Texto Principal de la Landing</h1>
-        <p>
-          Esta aplicacion te ayudara a reparar tus articulos electronicos, desde
+        <h1 className="text-landing">Revive ese aparato que siempre quiciste y no podias reparar</h1>
+        <p className="text-public">Publica tu falla y obtén una respuesta inmediata de nuestros reparadores, que esperas, publica ya !!!
+          {/* Esta aplicacion te ayudara a reparar tus articulos electronicos, desde
           una lavadora hasta una computadora ya que contamos con los mejores
           reparadores de tu demicilio, esta aplicacion te busca los
           mejores y más sercanos a tu domicilio y asi no tendras que salir de la
-          comodidad de tu casa y aplicar <span>QUEDATE EN CASA !</span>{" "}
+          comodidad de tu casa y aplicar <span>QUEDATE EN CASA !</span>{" "} */}
         </p>
         <div className="repair-button d-flex justify-content-between">
           <p className="text-center">
@@ -30,7 +30,7 @@ const Banner = () => {
           <RepairButton />
         </div>
 
-        <p className="text-center"> o </p>
+        <p className="text-center"></p>
         <div className="email-form d-flex mt-2 justify-content-between">
           <Form
             className="d-flex justify-content-between"

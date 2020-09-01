@@ -8,12 +8,18 @@ import BossRepairman from '../Img/bossRepairInfo.jpg'
 
 const BossRepairInfo = () => {
   return (
-    <Container className='my-5'>
-      <Col className='bossrepair__info d-flex'>
-        <div className='bossrepair__info_img col-12 col-md-6'><img src={BossRepairman} alt='repairman' className='img-fluid' /></div>
-        <div className='bossrepair__info_text col-12 col-md-6'>
-          <h3>Tenemos los mas grandes reparadores a tu dispicicion y podras consultar los presupuesto que mas se acomoden a tu bolsillo </h3>
-          <p>Contrary to popular belief, Lorem Issical Latin literature from 45 BC, making it over 2000 years old. </p>
+    <Container className="my-5">
+      <Col className="bossrepair__info d-flex">
+        <div className="bossrepair__info_img col-12 col-md-6">
+          <img src={BossRepairman} alt="repairman" className="img-fluid" />
+        </div>
+        <div className="bossrepair__info_text col-12 col-md-6">
+          <h3 className="text-repair-l">
+            Tenemos los mejores reparadores a tu disposición.{" "}
+          </h3>
+          <p className="text-public">
+            Podras consultar los presupuesto que mas se acomoden a tu bolsillo{" "}
+          </p>
           {/* <div>
             <Form onSubmit={handleSubmit(onSubmit)}>
               <FormGroup>
@@ -28,7 +34,7 @@ const BossRepairInfo = () => {
         </div>
       </Col>
     </Container>
-  )
+  );
 }
 
 export default BossRepairInfo
