@@ -27,7 +27,7 @@ const BenefitsList = () => {
       <Row>
         <Col className="benefits_list d-md-flex justify-content-between">
           <div className="card b" style={{ width: "22rem" }}>
-            <img src={sel} className="card-img-top" alt="..." />
+            <img src={sel} className=" card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">Nuestros Usuarios</h5>
               
@@ -38,7 +38,7 @@ const BenefitsList = () => {
             </div>
           </div>
           <div className="card b" style={{ width: "22rem" }}>
-            <img src={repar} class="card-img-top" alt="..." />
+            <img src={repar} className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">Nuestros Reparadores</h5>
               
@@ -49,7 +49,7 @@ const BenefitsList = () => {
             </div>
           </div>
           <div className="card b" style={{ width: "22rem" }}>
-            <img src={images} class="card-img-top" alt="..." />
+            <img src={images} className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">Nosotros</h5>
               

@@ -1,10 +1,13 @@
 .footer-container .row {
   display: block;
-  background-color: #C4C4C4;
+  background-color: #757B86;
 }
 
+.back {
+    background-color: #D0D2D3;
+}
 .footer {
-  background-color: #C4C4C4;
+  background-color: #757B86;
   ;
 }
 
@@ -24,7 +27,7 @@
   align-items: flex-end;
   margin: auto;
   justify-content: space-evenly;
-  margin: 20px 531px;
+  margin: 20px 270px;
   width: 200px;
  
 }
@@ -81,4 +84,43 @@
 
 .pad {
   margin-top: 100px;
+}
+
+
+.pago {
+  width: 100px;
+  height: 100px;
+  margin-left: 300px;
+}
+
+.foo {
+  font-size: 20.25px !important;
+  line-height: 32px !important;
+  font-family: 'CircularStd',
+  'Circular-cyr',
+  Montserrat,
+  sans-serif !important;
+  color: #001E30 !important;
+  font-weight: 400;
+  letter-spacing: 0px !important;
+  margin-left: 300px;
+}
+
+
+.foo-1 {
+  font-size: 20.25px !important;
+  line-height: 32px !important;
+  font-family: 'CircularStd',
+    'Circular-cyr',
+    Montserrat,
+    sans-serif !important;
+  color: #001E30 !important;
+  font-weight: 400;
+  letter-spacing: 0px !important;
+
+}
+
+
+.img-modi {
+  padding-left: 20px;
 }
