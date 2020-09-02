@@ -6,12 +6,12 @@ import {
 import QuotationModal from '../QuotationModal'
 
 const InfoCard = (props) => {
-  const { data: { answers, _id, brandAndModel } } = props
-  console.log(answers)
+  const { data: { updates, _id } } = props
+  console.log(props)
 
   return (
     <div>
-      {answers.map((item, index) => {
+      {updates.map((item, index) => {
         return (
           <Card key={index}>
             <CardHeader>{props.title}</CardHeader>
@@ -29,7 +29,6 @@ const InfoCard = (props) => {
                   data={item}
                   _id={_id}
                   repairmenName={item.repairmanName}
-                  repair={brandAndModel}
                 />
               </div>
             </CardBody>

@@ -4,6 +4,10 @@ import { useForm } from 'react-hook-form'
 import axios from 'axios'
 import swal from 'sweetalert'
 
+import { loadStripe } from '@stripe/stripe-js'
+import Stripe from '../Stripe'
+import { CardElement, Elements, useElements, useStripe } from '@stripe/react-stripe-js'
+
 import CalificationIndicator from '../CalificationIndicator'
 import ButtonBR from '../Button'
 import Walk from './Img/caminar.svg'
@@ -12,6 +16,10 @@ const QuotationModal = (props) => {
   const {
     className
   } = props
+  // Make sure to call `loadStripe` outside of a component’s render to avoid
+  // recreating the `Stripe` object on every render.
+  const stripePromise = loadStripe('pk_test_51HMmJBD9aCBWPYFt32OHiI1DYRR99UlV6z313ebUOJcqKs2dwzrgk5Ef8TsREW2T7OqsHLpBtDvAnUEVfOeqP9xd001zEBamB0')
+
   const [modal, setModal] = useState(false)
   const toggle = () => setModal(!modal)
   console.log(props)
@@ -53,11 +61,11 @@ const QuotationModal = (props) => {
       >
         <ModalHeader toggle={toggle}>
           <h4>Respuesta</h4>
-          <p>Reparación</p>
+          <p>{props.repair}</p>
         </ModalHeader>
         <ModalBody className='d-md-flex'>
           <div className='data-quote'>
-            <h4>{props.data.idRepairman}</h4>
+            <h4>{props.repairmenName}</h4>
             <CalificationIndicator
               serviceRating='3'
             />
@@ -76,17 +84,21 @@ const QuotationModal = (props) => {
                 <input type='checkbox' class='form-check-input' name='homeRepair' id='exampleCheck1' ref={register} />
                 <label class='form-check-label' for='exampleCheck1'>Reparación en casa</label>
               </div>
-              <ButtonBR text='Contratar' />
+              {/* <ButtonBR text='Contratar' /> */}
+              <button id='checkout-button'>Checkout</button>
             </Form>
+            <Elements stripe={stripePromise}>
+              <Stripe
+                cost={props.data.cost}
+                repair={props.repair}
+              />
+            </Elements>
           </div>
           <div className='location-quote'>
             <h4>location</h4>
           </div>
         </ModalBody>
-        <ModalFooter>
-
-          {/* <Button color='secondary' onClick={toggle}>Cancelar</Button> */}
-        </ModalFooter>
+        <ModalFooter />
       </Modal>
     </div>
   )

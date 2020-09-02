@@ -9,6 +9,7 @@ import {
   Form, FormGroup, Label, FormText
 } from 'reactstrap'
 import ButtonBR from '../Button'
+import ImageInput from '../ImageInput'
 
 const ModalExample = (props) => {
   const {
@@ -80,11 +81,12 @@ const ModalExample = (props) => {
               </div>
               <div className='col-12 col-md-6'>
                 <FormGroup>
-                  <Label for='exampleFile'>Sube una imagen</Label>
+                  {/* <Label for='exampleFile'>Sube una imagen</Label>
                   <input class='form-control' type='file' name='file' id='exampleFile' ref={register} />
                   <FormText color='muted'>
       Selecciona una imagen descriptiva del problema.
-                  </FormText>
+                  </FormText> */}
+                  <ImageInput />
                 </FormGroup>
                 <FormGroup>
                   <Label for='exampleSelect'>Delegación/Municipio</Label>
@@ -102,7 +104,7 @@ const ModalExample = (props) => {
                 </FormGroup>
               </div>
             </div>
-            <input type='submit' />
+            <ButtonBR text='Enviar' />
             {/* <div className='col-12 d-block'>
               <input type='submit' />
               <Button color='primary'>Reparar</Button>

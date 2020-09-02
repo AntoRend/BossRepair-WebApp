@@ -9,7 +9,6 @@ import './Home.css'
 import QuotationModal from '../../Components/QuotationModal'
 import FormM from '../../Components/FormM'
 
-
 // import RegisterRepair from './Components/RegisterRepair'
 
 export default class Home extends React.Component {
@@ -36,6 +35,6 @@ export default class Home extends React.Component {
           textr-3={Cancelar}
           textr-4={Modal} */}
       </div>
-    );
+    )
   }
 }
