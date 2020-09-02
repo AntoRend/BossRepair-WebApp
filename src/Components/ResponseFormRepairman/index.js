@@ -7,10 +7,12 @@ import swal from 'sweetalert'
 import Button from '../Button'
 
 const ResponseFormRepairman = (props) => {
+  console.log(props)
   const idRepairman = localStorage.getItem('userID')
+  const repairmanName = props.userData.fullName
   const { register, handleSubmit } = useForm()
   const onSubmit = (data) => {
-    const infoData = { idRepairman, ...data }
+    const infoData = { repairmanName, idRepairman, ...data }
 
     axios.patch(`http://localhost:8080/repair-order/answers/${props.data._id}`, infoData)
       .then((data) => {
@@ -21,6 +23,13 @@ const ResponseFormRepairman = (props) => {
           icon: 'success',
           button: 'Entendido'
         })
+      }).then(() => {
+        const userRole = localStorage.getItem('userRole')
+        if (userRole === 'user') {
+          window.location.href = '/dashboard'
+        } else {
+          window.location.href = '/dashboard-repair'
+        }
       })
       .catch((error) => {
         console.log(error)

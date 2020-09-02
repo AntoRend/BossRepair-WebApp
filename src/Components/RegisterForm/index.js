@@ -18,6 +18,8 @@ const RegisterForm = () => {
           icon: 'success',
           button: 'Entendido'
         })
+      }).then(() => {
+        window.location.href = '/'
       })
       .catch(function (error) {
         // console.log(error.response.data.error)
