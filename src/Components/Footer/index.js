@@ -31,7 +31,7 @@ const Footer = () => {
               <img className="img-modi" src={twitter} alt="img" />
             </Col>
           </div>
-          <div class="col">potilica de privaciad</div>
+          <div class="col">Potilica de privaciad</div>
           <div class="col">
             <p className="foo">Metodo de Pago</p>
             <img src={icon} className="pago" alt="..." />

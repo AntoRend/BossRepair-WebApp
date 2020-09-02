@@ -318,3 +318,16 @@ img {
 .card-img-top {
   height: 333;
 }
+
+
+.text-cards-2 {
+  font-size: 20.25px !important;
+  line-height: 32px !important;
+  font-family: 'CircularStd',
+  'Circular-cyr',
+  Montserrat,
+  sans-serif !important;
+  color: #001E30 !important;
+  font-weight: 400;
+  letter-spacing: 0px !important;
+}

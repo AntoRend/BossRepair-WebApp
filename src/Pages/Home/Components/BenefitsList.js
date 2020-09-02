@@ -30,10 +30,9 @@ const BenefitsList = () => {
             <img src={sel} className=" card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">Nuestros Usuarios</h5>
-              
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+
+              <p class="text-cards-2">
+                Satisfaccion total de nuestros usuarios.
               </p>
             </div>
           </div>
@@ -41,10 +40,9 @@ const BenefitsList = () => {
             <img src={repar} className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">Nuestros Reparadores</h5>
-              
-              <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+
+              <p className="text-cards-2">
+                Tenemos mayor cobertura gracias a la aplicacion.
               </p>
             </div>
           </div>
@@ -52,10 +50,9 @@ const BenefitsList = () => {
             <img src={images} className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">Nosotros</h5>
-              
-              <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+
+              <p className="text-cards-2">
+                Brindamos seguridad, calidad, precios y accesible.
               </p>
             </div>
           </div>
