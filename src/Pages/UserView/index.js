@@ -217,7 +217,7 @@ function UserView() {
               <p className="card-text">
                 This is a simple hero unit, a simple jumbotron-style...
               </p>
-              <div className="btn-cards">
+              <div className="btn-cards-c">
                 <button
                   className="btn-cards"
                   type="button"

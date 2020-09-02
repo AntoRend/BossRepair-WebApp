@@ -106,9 +106,10 @@ body {
 }
 
 
-.user-boton {
-  margin-left: -188px;
-}
+/* .user-boton-c {
+  margin-left: unset;
+} */
+
 
 }
 
@@ -123,9 +124,9 @@ body {
 }
 
 
-.user-boton {
-  margin-left: 188px;
-}
+/* .user-boton-c {
+  padding-left:  200px;
+} */
 
 
 .imangen-user {
