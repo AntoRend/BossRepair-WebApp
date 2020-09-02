@@ -13,28 +13,45 @@ const Banner = () => {
   }
 
   return (
-    <div className='banner d-md-flex my-5'>
-      <Col className='col-12 col-md-5 banner_info'>
+    <div className="banner d-md-flex my-5">
+      <Col className="col-12 col-md-5 banner_info">
         <h1>Texto Principal de la Landing</h1>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
-        <div className='repair-button d-flex justify-content-between'>
-          <p className='text-center'>Publica tu reparación</p>
+        <p>
+          Esta aplicacion te ayudara a reparar tus articulos electronicos, desde
+          una lavadora hasta una computadora ya que contamos con los mejores
+          reparadores de tu demicilio, esta aplicacion te busca los
+          mejores y más sercanos a tu domicilio y asi no tendras que salir de la
+          comodidad de tu casa y aplicar <span>QUEDATE EN CASA !</span>{" "}
+        </p>
+        <div className="repair-button d-flex justify-content-between">
+          <p className="text-center">
+            <span>Publica tu reparación</span>
+          </p>
           <RepairButton />
         </div>
 
-        <p className='text-center'> o </p>
-        <div className='email-form d-flex mt-2 justify-content-between'>
-          <Form className='d-flex justify-content-between' onSubmit={handleSubmit(onSubmit)}>
-            <input className='form-control mr-2' name='userEmail' type='email' ref={register} required />
-            <Button text='Consultar' />
+        <p className="text-center"> o </p>
+        <div className="email-form d-flex mt-2 justify-content-between">
+          <Form
+            className="d-flex justify-content-between"
+            onSubmit={handleSubmit(onSubmit)}
+          >
+            <input
+              className="form-control mr-2"
+              name="userEmail"
+              type="email"
+              ref={register}
+              required
+            />
+            <Button text="Consultar" />
           </Form>
         </div>
       </Col>
-      <div className='banner_assets col-12 col-md-6'>
-        <div className='banner_img ' />
+      <div className="banner_assets col-12 col-md-6">
+        <div className="banner_img " />
       </div>
     </div>
-  )
+  );
 }
 
 export default Banner

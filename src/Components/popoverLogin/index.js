@@ -49,6 +49,19 @@ const Login = (props) => {
     window.location.href = '/'
   }
 
+  const redirection = () => {
+    const role = localStorage.getItem('userRole')
+    if (role === 'user') {
+      return (
+        <Link to='/dashboard'>Mi Perfil</Link>
+      )
+    } else {
+      return (
+        <Link to='/dashboard-repair'>Mi Perfil</Link>
+      )
+    }
+  }
+
   const userLogged = () => {
     if (localStorage.length === 0) {
       return (
@@ -75,7 +88,7 @@ const Login = (props) => {
       return (
         <div>
           <DropdownItem>
-            <Link to='/dashboard'>Mi Perfil</Link>
+            {redirection()}
           </DropdownItem>
           <DropdownItem>
             <button onClick={LogOut}>Cerrar sesión</button>

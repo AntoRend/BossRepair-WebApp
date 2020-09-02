@@ -2,13 +2,11 @@ import React, { useState, useEffect } from 'react'
 import { Container } from 'reactstrap'
 
 import RepairData from '../../Components/RepairData'
-import InfoCard from '../../Components/InfoCardConsultView'
-import Button from '../../Components/Button'
-import EndModal from '../../Components/EndRepairModal'
+import UpdatesConsultView from '../../Components/UpdatesConsultView'
 
 const RequestConsult = (props) => {
   const [repair, renderInfo] = useState('')
-  // console.log(props.location.data)
+  console.log(repair)
   useEffect(() => {
     renderInfo(props.location.data)
   }, '')
@@ -18,10 +16,9 @@ const RequestConsult = (props) => {
       <RepairData
         data={repair}
       />
-      {/* <InfoCard
-        title='Cotización'
+      {/* <UpdatesConsultView
+        data={repair}
       /> */}
-      <EndModal data={props.location.data} />
     </Container>
   )
 }

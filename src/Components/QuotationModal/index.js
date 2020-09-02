@@ -57,7 +57,7 @@ const QuotationModal = (props) => {
         </ModalHeader>
         <ModalBody className='d-md-flex'>
           <div className='data-quote'>
-            <h4>{props.data.idRepairman}</h4>
+            <h4>{props.repairmenName}</h4>
             <CalificationIndicator
               serviceRating='3'
             />
@@ -76,7 +76,8 @@ const QuotationModal = (props) => {
                 <input type='checkbox' class='form-check-input' name='homeRepair' id='exampleCheck1' ref={register} />
                 <label class='form-check-label' for='exampleCheck1'>Reparación en casa</label>
               </div>
-              <ButtonBR text='Contratar' />
+              {/* <ButtonBR text='Contratar' /> */}
+              <button id='checkout-button'>Checkout</button>
             </Form>
           </div>
           <div className='location-quote'>

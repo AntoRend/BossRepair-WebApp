@@ -102,7 +102,7 @@ const ModalExample = (props) => {
                 </FormGroup>
               </div>
             </div>
-            <input type='submit' />
+            <ButtonBR text='Enviar' />
             {/* <div className='col-12 d-block'>
               <input type='submit' />
               <Button color='primary'>Reparar</Button>
