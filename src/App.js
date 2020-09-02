@@ -14,12 +14,15 @@ import Footer from './Components/Footer'
 
 // Pages
 import Home from './Pages/Home'
-import Register from './Pages/Register'
-import RequestConsult from './Pages/RequestConsult'
+import Register from './Pages/RegisterUser'
+import RequestConsult from './Pages/RequestConsultUser'
+import RequestConsultTwo from './Pages/RequestConsultUserTwo'
+import RequestConsultRepairman from './Pages/RequestConsultRepairman'
+import RepairmanView from './Pages/DashboardRepairman'
+import UserView from './Pages/DashboardUser'
 
 // Mau
-import UserView from './Pages/UserView'
-import ModalUser from './Pages/ModalUser'
+import RegisterRepair from './Pages/RegisterRepair'
 import RepairViewsC from './Pages/RepairViewsC'
 import RepairUserView from './Pages/RepairUserView'
 import RepairViews from './Pages/RepairViews'
@@ -29,16 +32,28 @@ import CustomerPosts from './Pages/Repairman/customerPosts'
 import PostDetails from './Pages/Repairman/postDetails'
 import Quote from './Pages/Repairman/quote'
 
-
 export default class App extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      userIsLoggedIn: false
+      userIsLoggedIn: false,
+      userRole: ''
+    }
+  }
+
+  componentDidMount () {
+    const role = localStorage.getItem('userRole')
+    // .length
+    if (localStorage.length !== 0) {
+      this.setState({
+        userIsLoggedIn: true,
+        userRole: role
+      })
     }
   }
 
   render () {
+    const { userIsLoggedIn, userRole } = this.state
     return (
       <Router>
         <div className='App'>
@@ -46,8 +61,12 @@ export default class App extends React.Component {
           <Switch>
             <Route exact path='/' component={Home} />
             <Route exact path='/registro' component={Register} />
+            <Route exact path='/registro-reparador' component={RegisterRepair} />
             <Route exact path='/solicitud-reparacion' component={RequestConsult} />
+            <Route exact path='/consulta-reparacion' component={RequestConsultTwo} />
+            <Route exact path='/solicitud-reparacion-reparador' component={RequestConsultRepairman} />
             <Route exact path='/dashboard' component={UserView} />
+            <Route exact path='/dashboard-repair' component={RepairmanView} />
             <Route exact path='/categorias' component={RepairViewsC} />
             <Route exact path='/reparador' component={RepairUserView} />
             <Route exact path='/dashboard-repair' component={RepairViews} />

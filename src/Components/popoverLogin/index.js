@@ -25,7 +25,14 @@ const Login = (props) => {
         localStorage.setItem('tokenUser', token)
         localStorage.setItem('userRole', role)
         localStorage.setItem('userID', id)
-      }).then(() => window.location.href = '/dashboard')
+      }).then(() => {
+        const userRole = localStorage.getItem('userRole')
+        if (userRole === 'user') {
+          window.location.href = '/dashboard'
+        } else {
+          window.location.href = '/dashboard-repair'
+        }
+      })
       .catch(function (error) {
         // console.log(error.response)
         swal({
