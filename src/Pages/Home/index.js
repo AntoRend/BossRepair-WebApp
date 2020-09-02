@@ -6,11 +6,8 @@ import BossRepairInfo from './Components/BossRepairInfo'
 import UserInfo from './Components/UserInfo'
 import RepairInfo from './Components/RepairInfo'
 import './Home.css'
-<<<<<<< HEAD
 import QuotationModal from '../../Components/QuotationModal'
 import FormM from '../../Components/FormM'
-=======
->>>>>>> develop
 
 // import RegisterRepair from './Components/RegisterRepair'
 
