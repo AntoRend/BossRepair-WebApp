@@ -27,9 +27,9 @@ const BenefitsList = () => {
       <Row>
         <Col className="benefits_list d-md-flex justify-content-between">
           <div className="card b" style={{ width: "22rem" }}>
-            <img src={sel} className=" card-img-top" alt="..." />
+            <img src={sel} className=" card-img-top-f" alt="..." />
             <div className="card-body">
-              <h5 className="card-title">Nuestros Usuarios</h5>
+              <h4 className="card-title">Nuestros Usuarios</h4>
 
               <p class="text-cards-2">
                 Satisfaccion total de nuestros usuarios.
@@ -39,7 +39,7 @@ const BenefitsList = () => {
           <div className="card b" style={{ width: "22rem" }}>
             <img src={repar} className="card-img-top" alt="..." />
             <div className="card-body">
-              <h5 className="card-title">Nuestros Reparadores</h5>
+              <h4 className="card-title">Nuestros Reparadores</h4>
 
               <p className="text-cards-2">
                 Tenemos mayor cobertura gracias a la aplicacion.
@@ -49,10 +49,10 @@ const BenefitsList = () => {
           <div className="card b" style={{ width: "22rem" }}>
             <img src={images} className="card-img-top" alt="..." />
             <div className="card-body">
-              <h5 className="card-title">Nosotros</h5>
+              <h4 className="card-title">Nosotros</h4>
 
               <p className="text-cards-2">
-                Brindamos seguridad, calidad, precios y accesible.
+                Brindamos seguridad, calidad y precios  accesible.
               </p>
             </div>
           </div>

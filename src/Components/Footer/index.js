@@ -20,10 +20,10 @@ const Footer = () => {
       <div class="container">
         <div class="row row-cols-2">
           <div class="col">
-         
+            <p className="foo-2">Metodo de Pago</p>
+            <img src={icon} className="pago" alt="..." />
           </div>
           <div class="col">
-            
             <Col className="icons-container col-md-6 col-ms-12">
               <img className="img-modi" src={fb} alt="img" />
               <img className="img-modi" src={instagram} alt="img" />
@@ -31,15 +31,14 @@ const Footer = () => {
               <img className="img-modi" src={twitter} alt="img" />
             </Col>
           </div>
-          <div class="col">Potilica de privaciad</div>
+          <div class="col"></div>
           <div class="col">
-            <p className="foo">Metodo de Pago</p>
-            <img src={icon} className="pago" alt="..." />
+            {/* <p className="foo">Potilica de privaciad</p> */}
           </div>
         </div>
         <div class="col">
-          <p className="foo-1">
-            @2020 Todos los derechos reservados BOOS REPAIR  C.D.M.X
+          <p className="foo-1-all">
+            @2020 BOSS REPAIR Todos los derechos reservados C.D.M.X
           </p>
         </div>
       </div>

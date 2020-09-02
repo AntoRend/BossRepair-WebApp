@@ -315,8 +315,8 @@ img {
 }
 
 
-.card-img-top {
-  height: 333;
+.card-img-top-f {
+  height: 210px;
 }
 
 
@@ -330,4 +330,5 @@ img {
   color: #001E30 !important;
   font-weight: 400;
   letter-spacing: 0px !important;
+  padding-top: 20px;
 }
