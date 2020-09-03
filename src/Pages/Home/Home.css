@@ -365,3 +365,26 @@ img {
 padding-top: -10px;
 border: none;
 }
+
+
+
+/* --------------------------NavBar------------------- */
+
+.logo-all {
+  font-family: 'Pacifico',
+  cursive;
+  display: inline-block;
+  height: inherit;
+  left: 0;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  color: #e5474b;
+  font-size: 1.75em;
+  text-transform: none;
+  font-weight: normal;
+  padding: 0;
+  padding-left: 180px;
+} 
