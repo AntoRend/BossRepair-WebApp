@@ -2,15 +2,10 @@ import React, { useState } from 'react'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Card, CardTitle, CardText, Form } from 'reactstrap'
 import { useForm } from 'react-hook-form'
 import axios from 'axios'
-import swal from 'sweetalert'
 
 import { loadStripe } from '@stripe/stripe-js'
 import Stripe from '../Stripe'
 import { CardElement, Elements, useElements, useStripe } from '@stripe/react-stripe-js'
-
-import CalificationIndicator from '../CalificationIndicator'
-import ButtonBR from '../Button'
-import Walk from './Img/caminar.svg'
 
 const QuotationModal = (props) => {
   const {
@@ -22,7 +17,7 @@ const QuotationModal = (props) => {
 
   const [modal, setModal] = useState(false)
   const toggle = () => setModal(!modal)
-  console.log(props)
+  // console.log(props)
   const { register, handleSubmit } = useForm()
   const onSubmit = (data) => {
     const infoData = {
@@ -33,16 +28,10 @@ const QuotationModal = (props) => {
     // console.log(infoData)
     axios.patch(`http://localhost:8080/repair-order/${props._id}`, infoData)
       .then((data) => {
-        console.log(data)
+        // console.log(data)
       })
       .catch((error) => {
-        console.log(error)
-        // swal({
-        //   title: 'Ups!',
-        //   text: 'Algo salió mal, intentalo de nuevo',
-        //   icon: 'error',
-        //   button: 'Entendido'
-        // })
+
       })
   }
 
@@ -59,19 +48,7 @@ const QuotationModal = (props) => {
         </ModalHeader>
         <ModalBody className='d-md-flex'>
           <div className='data-quote'>
-            <h4>{props.repairmenName}</h4>
-            <CalificationIndicator
-              serviceRating='3'
-            />
-            <div className='d-flex'>
-              <p className='mr-3'>$$$$</p>
-              <div className='d-flex align-items-center'><img className='mr-3' src={Walk} width='10%' alt='' /><p className=''>Va a domicilio</p></div>
-            </div>
-            <Card body>
-              <CardTitle>Descripción</CardTitle>
-              <CardText>{props.data.answer}</CardText>
-            </Card>
-            <CardText>Precio ${props.data.cost}</CardText>
+            <h5>Formulario de Pago</h5>
             <p><small>Si deseas que el reparador vaya a tu domicilio</small></p>
             <Form onSubmit={handleSubmit(onSubmit)}>
               <div class='form-group form-check'>
@@ -84,13 +61,8 @@ const QuotationModal = (props) => {
                   repair={props.repair}
                 />
               </Elements>
-              {/* <ButtonBR text='Continuar' /> */}
-              {/* <button id='checkout-button'>Checkout</button> */}
             </Form>
 
-          </div>
-          <div className='location-quote'>
-            <h4>location</h4>
           </div>
         </ModalBody>
         <ModalFooter />

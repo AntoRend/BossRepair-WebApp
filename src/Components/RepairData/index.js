@@ -4,7 +4,7 @@ import './repair-data.css'
 
 const RepairData = (props) => {
   useEffect(() => {
-    console.log(props)
+    // console.log(props)
   })
   return (
     <div className='repair_data col-12 my-5'>
