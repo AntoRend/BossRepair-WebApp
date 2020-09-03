@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { CardElement, Elements, useElements, useStripe } from '@stripe/react-stripe-js'
 import axios from 'axios'
+import swal from 'sweetalert'
 
 import './common.css'
 
 const CheckoutForm = (props) => {
+  const [paymentData, paymentHandler] = useState({})
   const cost = props.cost
   const repair = props.repair
   const stripe = useStripe()
@@ -43,8 +45,27 @@ const CheckoutForm = (props) => {
           description: repair
         })
         console.log(data)
+        swal({
+          title: 'Listo!',
+          text: 'Tu pago fue aplicado con exito, puedes consultar el estatus de la reparación en tu perfil',
+          icon: 'success',
+          button: 'Entendido'
+        }).then(() => {
+          const userRole = localStorage.getItem('userRole')
+          if (userRole === 'user') {
+            window.location.href = '/dashboard'
+          } else {
+            window.location.href = '/dashboard-repair'
+          }
+        })
       } catch (error) {
         console.log(error)
+        swal({
+          title: 'Ups!',
+          text: 'Algo salió mal, intentalo de nuevo',
+          icon: 'error',
+          button: 'Entendido'
+        })
       }
     }
   }
@@ -68,7 +89,7 @@ const CheckoutForm = (props) => {
         }}
       />
       <button type='submit' disabled={!stripe}>
-        Pay
+        Contratar
       </button>
     </form>
   )

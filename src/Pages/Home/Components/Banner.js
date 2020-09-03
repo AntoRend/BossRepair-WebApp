@@ -7,16 +7,10 @@ import Button from '../../../Components/Button'
 const Banner = () => {
   // let userEmail = {}
 
-  const { register, handleSubmit } = useForm()
-  const onSubmit = (data) => {
-    // console.log(data)
-    window.location.href = '/solicitud-reparacion?' + data.userEmail
-  }
-
   return (
     <div className='banner d-md-flex my-5'>
       <Col className='col-12 col-md-5 banner_info'>
-        <h1 className='text-landing'>Revive ese aparato que siempre quisiste y no podias reparar</h1>
+        <h1 className='text-landing'>Revive ese aparato que siempre quisiste y no podías reparar</h1>
         <p className='text-public'>Publica tu falla y obtén una respuesta inmediata de nuestros reparadores, que esperas, publica ya !!!
           {/* Esta aplicacion te ayudara a reparar tus articulos electronicos, desde
           una lavadora hasta una computadora ya que contamos con los mejores
@@ -32,21 +26,6 @@ const Banner = () => {
         </div>
 
         <p className='text-center' />
-        <div className='email-form d-flex mt-2 justify-content-between'>
-          <Form
-            className='d-flex justify-content-between'
-            onSubmit={handleSubmit(onSubmit)}
-          >
-            <input
-              className='form-control mr-2'
-              name='userEmail'
-              type='email'
-              ref={register}
-              required
-            />
-            <Button text='Consultar' />
-          </Form>
-        </div>
       </Col>
       <div className='banner_assets col-12 col-md-6'>
         <div className='banner_img ' />

@@ -13,7 +13,7 @@ const InfoCard = (props) => {
     <div>
       {answers.map((item, index) => {
         return (
-          <Card key={index}>
+          <Card key={index} className='my-2'>
             <CardHeader>{props.title}</CardHeader>
             <CardBody>
               <div className='description d-flex justify-content-between my-3'>
@@ -24,7 +24,7 @@ const InfoCard = (props) => {
                 <div className='list-group-item'>$ {item.cost} </div>
               </div>
               <div className='d-flex justify-content-end'>
-                <Button className='mx-2 btn btn-danger'>Go somewhere</Button>
+                {/* <Button className='mx-2 btn btn-danger'>Go somewhere</Button> */}
                 <QuotationModal
                   data={item}
                   _id={_id}
