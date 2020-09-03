@@ -10,6 +10,7 @@ import swal from 'sweetalert'
 
 import Profile from './img/usuario.svg'
 import ButtonBR from '../Button'
+import './popoverLogin.css'
 
 const Login = (props) => {
   const [popoverOpen, setPopoverOpen] = useState(false)
@@ -100,9 +101,9 @@ const Login = (props) => {
 
   return (
     <div>
-      <Button id='PopoverFocus' type='button'>
-        <img width='25%' src={Profile} alt='profile' />
-      </Button>
+      <button class='profile-icon' id='PopoverFocus' type='button'>
+        <img width='50%' src={Profile} alt='profile' />
+      </button>
       <Popover placement='bottom' isOpen={popoverOpen} target='PopoverFocus' toggle={toggle}>
         {userLogged()}
       </Popover>

@@ -16,7 +16,7 @@ const Banner = () => {
   return (
     <div className='banner d-md-flex my-5'>
       <Col className='col-12 col-md-5 banner_info'>
-        <h1 className='text-landing'>Revive ese aparato que siempre quisiste y no podias reparar</h1>
+        <h1 className='text-landing'>Revive ese aparato que siempre quisiste y no podías reparar</h1>
         <p className='text-public'>Publica tu falla y obtén una respuesta inmediata de nuestros reparadores, que esperas, publica ya !!!
           {/* Esta aplicacion te ayudara a reparar tus articulos electronicos, desde
           una lavadora hasta una computadora ya que contamos con los mejores

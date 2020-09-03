@@ -15,10 +15,10 @@ const BossRepairInfo = () => {
         </div>
         <div className="bossrepair__info_text col-12 col-md-6">
           <h3 className="text-repair-l">
-            Tenemos los mejores reparadores a tu disposición.{" "}
+            Los mejores reparadores a tu disposición.{" "}
           </h3>
           <p className="text-public">
-            Podras consultar los presupuesto que mas se acomoden a tu bolsillo{" "}
+            Consultar los presupuesto que mas se acomoden a tu bolsillo{" "}
           </p>
           {/* <div>
             <Form onSubmit={handleSubmit(onSubmit)}>

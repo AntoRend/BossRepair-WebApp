@@ -34,21 +34,15 @@ const QuotationModal = (props) => {
     axios.patch(`http://localhost:8080/repair-order/${props._id}`, infoData)
       .then((data) => {
         console.log(data)
-        swal({
-          title: 'Listo!',
-          text: 'La reparación ha sido asignada, puedes consultar el estatus en tu perfil',
-          icon: 'success',
-          button: 'Entendido'
-        })
       })
       .catch((error) => {
         console.log(error)
-        swal({
-          title: 'Ups!',
-          text: 'Algo salió mal, intentalo de nuevo',
-          icon: 'error',
-          button: 'Entendido'
-        })
+        // swal({
+        //   title: 'Ups!',
+        //   text: 'Algo salió mal, intentalo de nuevo',
+        //   icon: 'error',
+        //   button: 'Entendido'
+        // })
       })
   }
 
@@ -84,15 +78,16 @@ const QuotationModal = (props) => {
                 <input type='checkbox' class='form-check-input' name='homeRepair' id='exampleCheck1' ref={register} />
                 <label class='form-check-label' for='exampleCheck1'>Reparación en casa</label>
               </div>
-              {/* <ButtonBR text='Contratar' /> */}
-              <button id='checkout-button'>Checkout</button>
+              <Elements stripe={stripePromise}>
+                <Stripe
+                  cost={props.data.cost}
+                  repair={props.repair}
+                />
+              </Elements>
+              {/* <ButtonBR text='Continuar' /> */}
+              {/* <button id='checkout-button'>Checkout</button> */}
             </Form>
-            <Elements stripe={stripePromise}>
-              <Stripe
-                cost={props.data.cost}
-                repair={props.repair}
-              />
-            </Elements>
+
           </div>
           <div className='location-quote'>
             <h4>location</h4>
