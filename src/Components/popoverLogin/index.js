@@ -11,6 +11,10 @@ import swal from 'sweetalert'
 import Profile from './img/usuario.svg'
 import ButtonBR from '../Button'
 
+//css
+import '../../Pages/Home/Home.css'
+
+
 const Login = (props) => {
   const [popoverOpen, setPopoverOpen] = useState(false)
   const toggle = () => setPopoverOpen(!popoverOpen)
@@ -53,11 +57,13 @@ const Login = (props) => {
     const role = localStorage.getItem('userRole')
     if (role === 'user') {
       return (
-        <Link to='/dashboard'>Mi Perfil</Link>
-      )
+        <Link className="perfil-reg" to="/dashboard">
+          Mi Perfil
+        </Link>
+      );
     } else {
       return (
-        <Link to='/dashboard-repair'>Mi Perfil</Link>
+        <Link className="perfil-reg" to='/dashboard-repair'>Mi Perfil</Link>
       )
     }
   }
@@ -91,7 +97,7 @@ const Login = (props) => {
             {redirection()}
           </DropdownItem>
           <DropdownItem>
-            <button onClick={LogOut}>Cerrar sesión</button>
+            <button className="close-login" onClick={LogOut}>Cerrar sesión</button>
           </DropdownItem>
         </div>
       )
@@ -99,9 +105,9 @@ const Login = (props) => {
   }
 
   return (
-    <div>
-      <Button id='PopoverFocus' type='button'>
-        <img width='25%' src={Profile} alt='profile' />
+    <div className="login-all">
+      <Button className="login-all" id='PopoverFocus' type='button'>
+        <img className="perfil-icons" width='25%' src={Profile} alt='profile' />
       </Button>
       <Popover placement='bottom' isOpen={popoverOpen} target='PopoverFocus' toggle={toggle}>
         {userLogged()}

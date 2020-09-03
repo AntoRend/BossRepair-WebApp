@@ -332,3 +332,36 @@ img {
   letter-spacing: 0px !important;
   padding-top: 20px;
 }
+
+
+
+/* -------------------------POPOVERLOGIN---------------------*/
+
+.close-login {
+  background-color: #757B86;
+}
+
+
+.perfil-reg {
+  font-size: 20.25px !important;
+  line-height: 32px !important;
+  font-family: 'CircularStd',
+  'Circular-cyr',
+  Montserrat,
+  sans-serif !important;
+  color: #001E30 !important;
+  font-weight: 400;
+  letter-spacing: 0px !important;
+  padding-top: 20px;
+  padding-left: 25px;
+}
+
+.login-all .btn-secondary {
+  background-color:whitesmoke;
+  padding: 0px;
+}
+
+.perfil-icons {
+padding-top: -10px;
+border: none;
+}
