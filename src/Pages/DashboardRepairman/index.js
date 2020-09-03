@@ -20,6 +20,7 @@ function RepairView () {
     const responseUser = await axios.get(`http://localhost:8080/repairmen/${userId}`)
     // console.log(responseOrders.data.data.allOrderRepair)
     userRequest(responseUser.data.data.Repairman)
+    console.log(responseUser)
   }
 
   return (

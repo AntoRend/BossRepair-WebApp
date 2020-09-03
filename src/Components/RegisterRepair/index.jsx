@@ -41,6 +41,7 @@ const RegisterRepair = () => {
               name='fullName'
               placeholder='Nombre'
               ref={register}
+              required
             />
           </FormGroup>
           <FormGroup>
@@ -62,6 +63,7 @@ const RegisterRepair = () => {
               id='exampleEmail'
               placeholder='with a placeholder'
               ref={register}
+              required
             />
           </FormGroup>
           <FormGroup>
@@ -72,6 +74,7 @@ const RegisterRepair = () => {
               name='password'
               placeholder='password '
               ref={register}
+              required
             />
           </FormGroup>
           <FormGroup>
@@ -82,6 +85,7 @@ const RegisterRepair = () => {
               name='passwordConfirm'
               placeholder='password '
               ref={register}
+              required
             />
           </FormGroup>
         </div>
@@ -94,6 +98,7 @@ const RegisterRepair = () => {
               name='streetAddress'
               placeholder='Calle y número'
               ref={register}
+              required
             />
           </FormGroup>
           <FormGroup>
@@ -101,9 +106,10 @@ const RegisterRepair = () => {
             <input
               class='form-control'
               type='text'
-              name='Municipality'
+              name='municipality'
               placeholder='Delegación/Municipio'
               ref={register}
+              required
             />
           </FormGroup>
           <FormGroup>
@@ -114,6 +120,7 @@ const RegisterRepair = () => {
               name='city'
               placeholder='Ciudad'
               ref={register}
+              required
             />
             <FormGroup>
               <Label for='name'>Código Postal</Label>
@@ -123,6 +130,7 @@ const RegisterRepair = () => {
                 name='zipCode'
                 placeholder='Código Postal'
                 ref={register}
+                required
               />
             </FormGroup>
           </FormGroup>
