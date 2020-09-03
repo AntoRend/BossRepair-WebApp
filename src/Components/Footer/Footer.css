@@ -1,14 +1,15 @@
 .footer-container .row {
   display: block;
-  background-color: #757B86;
+  background-color: #D0D2D3;
 }
 
 .back {
     background-color: #D0D2D3;
     margin-top: -27px;
+   
 }
 .footer {
-  background-color: #757B86;
+  background-color: #D0D2D3;
   ;
 }
 
@@ -16,12 +17,12 @@
   text-align: center;
 }
 
-.logo figure img {
+/* .logo figure img {
   width: 150px;
   padding-top: 10px;
   float: left;
   margin-left: 30px;
-}
+} */
 
 .icons-container {
   display: flex;
@@ -125,6 +126,7 @@
   width: 100px;
   height: 100px;
   margin-left: -300px;
+  margin-top: 40px;
 }
 
 .foo {
@@ -173,6 +175,8 @@
 
 .img-modi {
   padding-left: 20px;
+  width: 55px;
+  height: 35px;
 }
 
 .foo-1-all {
@@ -187,4 +191,9 @@
     letter-spacing: 0px !important;
     margin-top: 27px;
     margin-bottom: 0;
+}
+
+
+.footer-container {
+  margin: auto;
 }
