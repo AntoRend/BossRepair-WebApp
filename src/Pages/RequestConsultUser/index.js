@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { Container, Row, Col, Card, CardTitle } from 'reactstrap'
-import axios from 'axios'
+import React from 'react'
+import { Container } from 'reactstrap'
 
 import RepairData from '../../Components/RepairData'
 import InfoCard from '../../Components/InfoCardConsultView'
@@ -9,58 +8,37 @@ import InfoCard from '../../Components/InfoCardConsultView'
 import './consultview.css'
 
 const RequestConsult = (props) => {
-  const [cards, setPosts] = useState([])
-  const [repair, handleClick] = useState('')
-
-  useEffect(() => {
-    fetchData()
-  }, [])
-
-  async function fetchData () {
-    let userEmail = window.location.search
-    userEmail = userEmail.substring(1)
-    // console.log(userEmail)
-    const response = await axios.get(
-    `http://localhost:8080/repair-order/info-repairs/${userEmail}`)
-    setPosts(response.data.data.Repairs)
-  }
-
-  const renderInfo = () => {
-    if (repair === '') {
-    } else {
-      return (
-        <div>
-          <RepairData 
-          data={cards.[repair]}
-          />
-          <InfoCard 
-          title ="Cotización"
-          data={cards.[repair]}
-          />
-        </div>
-      )
-    }
-  }
+  const repairData = props.location.data
 
   return (
-    <Container className="consult-view">
-      <Row>
-        <Col className='d-flex'>
-          {cards.map((item, index) => {
-            return (
-              // console.log('hke?')
-              <Card body outline color='secondary' key={index} className='col-6 col-md-3 d-flex card__info__body'>
-                <CardTitle className=''>{item.brandAndModel}</CardTitle>
-                {/* <Button text='Reparación' onClick={handleClick(index)} /> */}
-                <button type='button' className="primary-button" onClick={(e) => handleClick(index)}>Push</button>
-              </Card>
-            )
-          })}
-        </Col>
-      </Row>
-      {renderInfo()}
+    <Container className='consult-view'>
+      <div>
+        <RepairData
+          data={repairData}
+        />
+        <InfoCard
+          title='Cotización'
+          data={repairData}
+        />
+      </div>
     </Container>
   )
 }
 
 export default RequestConsult
+
+// <Row>
+// <Col className='d-flex'>
+//   {cards.map((item, index) => {
+//     return (
+//       // console.log('hke?')
+//       <Card body outline color='secondary' key={index} className='col-6 col-md-3 d-flex card__info__body'>
+//         <CardTitle className=''>{item.brandAndModel}</CardTitle>
+//         {/* <Button text='Reparación' onClick={handleClick(index)} /> */}
+//         <button type='button' className="primary-button" onClick={(e) => handleClick(index)}>Push</button>
+//       </Card>
+//     )
+//   })}
+// </Col>
+// </Row>
+// {renderInfo()}

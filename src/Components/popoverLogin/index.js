@@ -21,7 +21,7 @@ const Login = (props) => {
 
   const { register, handleSubmit } = useForm()
   const onSubmit = (data) => {
-    console.log(data)
+    // console.log(data)
     axios.post('http://localhost:8080/auth/login', data)
       .then(function (response) {
         console.log(response)

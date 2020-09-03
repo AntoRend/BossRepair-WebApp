@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  Card, Button, CardHeader, CardFooter, CardBody,
+  Card, CardHeader, CardFooter, CardBody,
   CardTitle, CardText
 } from 'reactstrap'
 import QuotationModal from '../QuotationModal'
@@ -21,15 +21,14 @@ const InfoCard = (props) => {
                   <CardTitle>{item.repairmanName}</CardTitle>
                   <CardText>{item.answer}</CardText>
                 </div>
-                <div className='list-group-item'>$ {item.cost} </div>
+                {/* <div className='list-group-item'>$ {item.cost} </div> */}
               </div>
               <div className='d-flex justify-content-end'>
-                <Button className='mx-2 btn btn-danger'>Go somewhere</Button>
-                <QuotationModal
+                {/* <QuotationModal
                   data={item}
                   _id={_id}
                   repairmenName={item.repairmanName}
-                />
+                /> */}
               </div>
             </CardBody>
             <CardFooter>BossRepair</CardFooter>

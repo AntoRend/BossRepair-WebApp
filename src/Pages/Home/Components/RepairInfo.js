@@ -5,7 +5,7 @@ import Button from '../../../Components/Button'
 
 const RepairInfo = () => {
   return (
-    <Row className='repair__info mt-5 d-flex '>
+    <Row className='repair__info mt-5 d-flex'>
       <Col className='col-md-6'>
         <div className='repair__info_text'>
           <h3 className='title-repair'>
