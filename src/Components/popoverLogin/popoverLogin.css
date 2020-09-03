@@ -12,3 +12,19 @@
   border: none;
   box-shadow: none;
 }
+
+.logout {
+  background: none;
+  color: black;
+  font-weight: 100;
+  border: none;
+  box-shadow: none;
+}
+
+.logout:hover {
+  background: none;
+  color: black;
+  font-weight: 100;
+  border: none;
+  box-shadow: none;
+}

@@ -13,6 +13,9 @@ import {
 import RepairButton from '../RepairRequest'
 import PopoverLogin from '../popoverLogin'
 
+//css
+import '../../Pages/Home/Home.css'
+
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false)
   const toggle = () => setIsOpen(!isOpen)
@@ -24,7 +27,7 @@ const NavBar = (props) => {
   return (
     <div>
       <Navbar color='light' light expand='md'>
-        <NavbarBrand href='/'>BossRepair</NavbarBrand>
+        <NavbarBrand className="logo-all" href='/'>BossRepair</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse className='justify-content-end' isOpen={isOpen} navbar>
           <Nav className='' navbar>

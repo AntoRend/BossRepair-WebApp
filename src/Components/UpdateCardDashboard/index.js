@@ -9,7 +9,7 @@ const UpdateCardDashboard = (props) => {
   const userId = localStorage.getItem('userID')
   useEffect(() => {
     ordersRequest()
-  }, [])
+  })
 
   const ordersRequest = async () => {
     const repairs = await axios.get(`http://localhost:8080/repairmen/repair-quotes/${userId}`)

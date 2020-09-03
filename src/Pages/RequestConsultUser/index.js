@@ -6,6 +6,8 @@ import RepairData from '../../Components/RepairData'
 import InfoCard from '../../Components/InfoCardConsultView'
 // import Button from '../../Components/Button'
 
+import './consultview.css'
+
 const RequestConsult = (props) => {
   const [cards, setPosts] = useState([])
   const [repair, handleClick] = useState('')
@@ -41,16 +43,16 @@ const RequestConsult = (props) => {
   }
 
   return (
-    <Container>
+    <Container className="consult-view">
       <Row>
         <Col className='d-flex'>
           {cards.map((item, index) => {
             return (
               // console.log('hke?')
-              <Card body outline color='secondary' key={index} className='col-6 col-md-3 d-flex'>
+              <Card body outline color='secondary' key={index} className='col-6 col-md-3 d-flex card__info__body'>
                 <CardTitle className=''>{item.brandAndModel}</CardTitle>
                 {/* <Button text='Reparación' onClick={handleClick(index)} /> */}
-                <button type='button' onClick={(e) => handleClick(index)}>Push</button>
+                <button type='button' className="primary-button" onClick={(e) => handleClick(index)}>Push</button>
               </Card>
             )
           })}

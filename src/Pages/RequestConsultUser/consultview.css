@@ -1,0 +1,20 @@
+.consult-view {
+  /*  */
+}
+
+.primary-button {
+  color: white !important;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 4px;
+  padding: 1px 20px;
+  background-color: #EB5424;
+  border: 2px solid;
+  border-color: #EB5424;
+  transition: all 1s ease;
+  position: relative;
+}
+.primary-button:hover {
+  background: white;
+  color: #444447 !important;
+}

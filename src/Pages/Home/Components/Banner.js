@@ -7,12 +7,6 @@ import Button from '../../../Components/Button'
 const Banner = () => {
   // let userEmail = {}
 
-  const { register, handleSubmit } = useForm()
-  const onSubmit = (data) => {
-    // console.log(data)
-    window.location.href = '/solicitud-reparacion?' + data.userEmail
-  }
-
   return (
     <div className='banner d-md-flex my-5'>
       <Col className='col-12 col-md-5 banner_info'>
@@ -32,21 +26,6 @@ const Banner = () => {
         </div>
 
         <p className='text-center' />
-        <div className='email-form d-flex mt-2 justify-content-between'>
-          <Form
-            className='d-flex justify-content-between'
-            onSubmit={handleSubmit(onSubmit)}
-          >
-            <input
-              className='form-control mr-2'
-              name='userEmail'
-              type='email'
-              ref={register}
-              required
-            />
-            <Button text='Consultar' />
-          </Form>
-        </div>
       </Col>
       <div className='banner_assets col-12 col-md-6'>
         <div className='banner_img ' />

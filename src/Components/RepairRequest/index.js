@@ -109,10 +109,10 @@ const ModalExample = (props) => {
         text='Repara'
       />
       {/* <Button color='danger' onClick={toggle}>{buttonLabel}</Button> */}
-      <Modal isOpen={modal} toggle={toggle} className={className}>
+      <Modal isOpen={modal} toggle={toggle} className={`${className} modal-dialog modal-lg`}>
         <ModalHeader toggle={toggle} close={closeBtn}>Reparación <br /><p className='my-0'><small>Artículo a reparar</small></p></ModalHeader>
         <ModalBody>
-          <Form onSubmit={handleSubmit(onSubmit)}>
+          <Form onSubmit={handleSubmit(onSubmit)} className='mt-1'>
             <div className='d-md-flex'>
               <div className='col-12 col-md-6'>
                 <FormGroup>
@@ -139,19 +139,15 @@ const ModalExample = (props) => {
                   <div>
                     {/* For Alert box */}
                     <div id='oc-alert-container' />
-                    <div className='card border-light mb-3 mt-5' style={{ boxShadow: '0 5px 10px 2px rgba(195,192,192,.5)' }}>
-                      <div className='card-header'>
-                        {/* <h3 style={{ color: '#555', marginLeft: '12px' }}>Single Image Upload</h3> */}
-                        <p className='text-muted' style={{ marginLeft: '12px' }}>Upload Size: 250px x 250px ( Max 2MB )</p>
-                      </div>
-                      <div className='card-body'>
-                        <p className='card-text'>Please upload an image for your repair</p>
-                        <input type='file' onChange={handleInput} />
-                        <div className='mt-5'>
-                          {/* <button className='btn btn-info'>Upload!</button> */}
-                        </div>
-                      </div>
+                    {/* <div className='card border-light'> */}
+                    {/* <div className='card-body'> */}
+                    <p className='card-text'>Sube una imagen de tu artículo </p>
+                    <input type='file' onChange={handleInput} />
+                    <div className='mt-5'>
+                      {/* <button className='btn btn-info'>Upload!</button> */}
                     </div>
+                    {/* </div> */}
+                    {/* </div> */}
                   </div>
                 </FormGroup>
                 <FormGroup>

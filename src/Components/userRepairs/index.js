@@ -24,14 +24,13 @@ const UserRepairs = (props) => {
         cards.map((item, index) => {
           if (index < 4) {
             return (
-              <div className='card-body col-6' key={index}>
-                <h5 className='card-title text-ali'>{item.brandAndModel}</h5>
-                <p className='card-text'>
+              <div className='principal__body card-body' key={index}>
+                <h5 className='principal__title card-title text-ali'>{item.brandAndModel}</h5>
+                <p className='principal__text card-text'>
                   {item.problemDescription}
                 </p>
-                <hr className='solid-divi-cards' />
-
-                <p className='text-cards'>{item.status}</p>
+                <hr className='' />
+                <p className=' '>{item.status}</p>
                 <Link to={{ pathname: '/consulta-reparacion', data: item }}><Button text='Detalle' /></Link>
               </div>
             )

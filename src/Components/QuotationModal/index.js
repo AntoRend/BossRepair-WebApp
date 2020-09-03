@@ -48,7 +48,7 @@ const QuotationModal = (props) => {
 
   return (
     <div>
-      <Button color='danger' onClick={toggle}>Ver detalle</Button>
+      <button className='primary-button' onClick={toggle}>Ver detalle</button>
       <Modal
         isOpen={modal} modalTransition={{ timeout: 700 }} backdropTransition={{ timeout: 1300 }}
         toggle={toggle} className={className + 'modal-lg'}
@@ -89,9 +89,9 @@ const QuotationModal = (props) => {
             </Form>
 
           </div>
-          <div className='location-quote'>
+          {/* <div className='location-quote'>
             <h4>location</h4>
-          </div>
+          </div> */}
         </ModalBody>
         <ModalFooter />
       </Modal>

@@ -7,6 +7,8 @@ import UserRepairs from '../../Components/userRepairs'
 import UpdateCardDashboard from '../../Components/UpdateCardDashboard'
 import LastCardDashboard from '../../Components/LastCardDashboard'
 
+import './dashboard.css'
+
 function UserView () {
   const [userData, userRequest] = useState([])
 
@@ -25,7 +27,9 @@ function UserView () {
   return (
     <Container>
       <Row>
-        <h1>{`${userData.firstName} ${userData.lastName}`}</h1>
+        <Col className='col-12 name-container'>
+          <h1 className='col-9'>{`${userData.firstName} ${userData.lastName}`}</h1>
+        </Col>
       </Row>
       <Row>
         <ProfileDataDashboard

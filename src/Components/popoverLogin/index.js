@@ -12,6 +12,9 @@ import Profile from './img/usuario.svg'
 import ButtonBR from '../Button'
 import './popoverLogin.css'
 
+// css
+import '../../Pages/Home/Home.css'
+
 const Login = (props) => {
   const [popoverOpen, setPopoverOpen] = useState(false)
   const toggle = () => setPopoverOpen(!popoverOpen)
@@ -54,11 +57,13 @@ const Login = (props) => {
     const role = localStorage.getItem('userRole')
     if (role === 'user') {
       return (
-        <Link to='/dashboard'>Mi Perfil</Link>
+        <Link className='perfil-reg' to='/dashboard'>
+          Mi Perfil
+        </Link>
       )
     } else {
       return (
-        <Link to='/dashboard-repair'>Mi Perfil</Link>
+        <Link className='perfil-reg' to='/dashboard-repair'>Mi Perfil</Link>
       )
     }
   }
@@ -92,7 +97,7 @@ const Login = (props) => {
             {redirection()}
           </DropdownItem>
           <DropdownItem>
-            <button onClick={LogOut}>Cerrar sesión</button>
+            <button className='logout' onClick={LogOut}>Cerrar sesión</button>
           </DropdownItem>
         </div>
       )

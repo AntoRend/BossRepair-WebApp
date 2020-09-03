@@ -3,6 +3,7 @@ import { Container } from 'reactstrap'
 
 import RepairData from '../../Components/RepairData'
 import UpdatesConsultView from '../../Components/UpdatesConsultView'
+import EndModalRepair from '../../Components/EndRepairModal'
 
 const RequestConsult = (props) => {
   const [repair, renderInfo] = useState('')
@@ -17,6 +18,9 @@ const RequestConsult = (props) => {
         data={repair}
       />
       {/* <UpdatesConsultView
+        data={repair}
+      /> */}
+      {/* <EndModalRepair
         data={repair}
       /> */}
     </Container>

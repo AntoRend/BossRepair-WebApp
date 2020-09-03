@@ -18,12 +18,12 @@ const PrincipalCardDashboard = (props) => {
   }
 
   return (
-    <div className='d-md-flex'>
+    <div className='d-md-flex justify-content-between'>
       {
         dataOrders.map((e) => {
           if (e.idRepairmanResponse === userId) {
             return (
-              <div className='card-body col-6'>
+              <div className='card-body col-5'>
                 <h5 className='card-title text-ali'>{e.brandAndModel}</h5>
                 <p className='card-text'>
                   {e.problemDescription}
