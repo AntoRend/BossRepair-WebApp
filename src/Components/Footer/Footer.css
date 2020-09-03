@@ -29,7 +29,7 @@
   align-items: flex-end;
   margin: auto;
   justify-content: space-evenly;
-  margin: 20px 270px;
+  margin: 6px 270px;
   width: 200px;
   padding-top: 60px;
  
@@ -52,7 +52,7 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-   .icons-container {
+   /* .icons-container {
      display: flex;
      align-items: flex-end;
      margin: auto;
@@ -60,8 +60,18 @@
      margin: 20px -92px;
      width: 200px;
      
-   }
+   } */
 
+
+   .icons-container {
+     display: flex;
+     align-items: flex-end;
+     margin: auto;
+     justify-content: space-evenly;
+     margin: 20px -118px;
+     width: 200px;
+     padding-top: 160px;
+   }
 .foo {
   font-size: 20.25px !important;
   line-height: 32px !important;
@@ -88,11 +98,19 @@
 
 }
 
-.pago {
+/* .pago {
   width: 100px;
   height: 100px;
   margin: auto;
+} */
+
+.pago {
+  width: 100px;
+  height: 80px;
+  margin-left: 135px;
+  margin-top: 25px;
 }
+
 
 }
 
@@ -122,12 +140,12 @@
 }
 
 
-.pago {
+/* .pago {
   width: 100px;
   height: 100px;
   margin-left: -300px;
   margin-top: 40px;
-}
+} */
 
 .foo {
   font-size: 20.25px !important;
@@ -189,11 +207,17 @@
     color: #001E30 !important;
     font-weight: 400;
     letter-spacing: 0px !important;
-    margin-top: 27px;
+    margin-top: 40px;
     margin-bottom: 0;
 }
 
 
 .footer-container {
   margin: auto;
+}
+
+
+.ubi {
+  padding-bottom: 15px;
+  padding-left: 10px;
 }

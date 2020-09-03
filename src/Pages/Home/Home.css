@@ -1,3 +1,6 @@
+
+
+
 .banner_info {
   /* margin: 10rem 0; */
   text-align: initial;
@@ -79,8 +82,10 @@
   background-image: url('./Img/repairInfo-movil.jpg');
   background-size: cover;
   padding: 5%;
-  border-radius: 12px;
+  
 }
+
+
 
 .repair__info_text {
   text-align: initial;
@@ -286,6 +291,7 @@ img {
 
 .banner {
   background-color: whitesmoke;
+  padding-top: 25px;
 }
 
 .user__info {
@@ -367,7 +373,7 @@ img {
   font-weight: 400;
   letter-spacing: 0px !important;
   padding-top: 20px;
-  padding-left: 25px;
+  padding-left: 45px;
 }
 
 .login-all .btn-secondary {
@@ -525,27 +531,21 @@ border: none;
   /* margin-right: 70px; */
 }
 
-
-
-.icons-container {
-  display: flex;
-  align-items: flex-end;
-  margin: auto;
-  justify-content: space-evenly;
-  margin: 20px -92px;
-  width: 200px;
-  padding-top: 160px;
-}
-
-.pago {
-  width: 0px; 
-   height: 0px;
-  margin-left: 135px;
-  margin-top: 25px;
-}
-
 .back {
   width: 103%;
 }
+
+.repair-button {
+padding-top: 15px;
+display: block;
 }
 
+
+}
+
+.row {
+
+  flex-wrap: wrap !important;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
