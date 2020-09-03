@@ -11,12 +11,12 @@ function ProfileDataDashboard (props) {
           width='50%'
           src='https://picsum.photos/200/300'
           alt='profile'
-        />
+                />
         </figure>
       </div>
       <div className='profile__data'>
         <p>{props.data.email}</p>
-        <p>{props.data.city}</p>
+        <p>{props.data.municipality}</p>
         <p>{props.data.city}</p>
         <CalificationIndicator />
       </div>

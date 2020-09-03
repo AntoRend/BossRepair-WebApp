@@ -27,6 +27,13 @@ export default class Home extends React.Component {
         <BossRepairInfo />
         <UserInfo />
         <RepairInfo />
+        {/* <RegisterRepair /> */}
+        {/* <FormM
+          title={Actualizacion}
+          title={RespuestaDelRreparador}
+          text-2={precioAproximado}
+          textr-3={Cancelar}
+          textr-4={Modal} */}
       </div>
     )
   }

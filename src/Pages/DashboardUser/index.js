@@ -6,8 +6,11 @@ import ProfileDataDashboard from '../../Components/ProfleDataDashboard'
 import UserRepairs from '../../Components/userRepairs'
 import UpdateCardDashboard from '../../Components/UpdateCardDashboard'
 import LastCardDashboard from '../../Components/LastCardDashboard'
+import UpdateCardUser from '../../Components/UpdateCardUser'
 
-function UserView () {
+import './dashboard.css'
+
+function UserView (props) {
   const [userData, userRequest] = useState([])
 
   useEffect(() => {
@@ -25,7 +28,9 @@ function UserView () {
   return (
     <Container>
       <Row>
-        <h1>{`${userData.firstName} ${userData.lastName}`}</h1>
+        <Col className='col-12 name-container'>
+          <h1 className='col-9'>{`${userData.firstName} ${userData.lastName}`}</h1>
+        </Col>
       </Row>
       <Row>
         <ProfileDataDashboard
@@ -34,6 +39,13 @@ function UserView () {
         <Col className='col-12 col-md-7'>
           <UserRepairs
             data={userData}
+          />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <UpdateCardUser
+            data={props.userData}
           />
         </Col>
       </Row>

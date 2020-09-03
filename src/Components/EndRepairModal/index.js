@@ -8,8 +8,8 @@ import ButtonBR from '../Button'
 
 const ModalExample = (props) => {
   const {
-    buttonLabel,
-    className
+    className,
+    data
   } = props
 
   const [modal, setModal] = useState(false)
@@ -19,15 +19,15 @@ const ModalExample = (props) => {
 
   return (
     <div>
-      <Button color='danger' onClick={toggle}>{buttonLabel}</Button>
+      <Button color='danger' onClick={toggle}>Calificar Reparador</Button>
       <Modal
         isOpen={modal} modalTransition={{ timeout: 700 }} backdropTransition={{ timeout: 1300 }}
         toggle={toggle} className={className}
       >
         <ModalHeader toggle={toggle}>Finalizar reparacion</ModalHeader>
         <ModalBody>
-          <h5>{props.data.idRepairmanResponse}</h5>
-          <p>{props.data.brandAndModel}</p>
+          <h5>{data.idRepairmanResponse.fullName}</h5>
+          <p>{data.brandAndModel}</p>
           <div>
             <Box component='fieldset' mb={3} borderColor='transparent'>
               <Typography component='legend'>Controlled</Typography>

@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  Card, Button, CardHeader, CardFooter, CardBody,
+  Card, CardHeader, CardFooter, CardBody,
   CardTitle, CardText
 } from 'reactstrap'
 import CalificationIndicator from '../CalificationIndicator'
@@ -10,7 +10,6 @@ import Walk from './Img/caminar.svg'
 
 const InfoCard = (props) => {
   const { data, data: { answers, _id, brandAndModel } } = props
-  console.log(data)
 
   return (
     <div>

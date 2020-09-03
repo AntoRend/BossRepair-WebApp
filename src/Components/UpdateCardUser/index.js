@@ -26,22 +26,16 @@ const UpdateCardDashboard = (props) => {
   }
 
   const ordersRequest = async () => {
-    // if (userRole === 'user') {
-    //   const repairs = await axios.get(`http://localhost:8080/repair-order/info-repairs//${props.userData.email}`)
-    //   const data = repairs.data.data.quotesData
-    //   // orders = data
-    //   reqOrders(data)
-    // } else {
-    const repairs = await axios.get(`http://localhost:8080/repairmen/repair-quotes/${userId}`)
-    const data = repairs.data.data.quotesData
-    // orders = data
-    reqOrders(data)
-    // }
+    const response = await axios.get(
+      `http://localhost:8080/repair-order/info-repairs/${props.data.email}`)
+    reqOrders(response.data.data.Repairs)
+    // (data)
+    // console.log(props)
   }
 
   return (
     <Col className=''>
-      <h3>Reparaciones disponibles</h3>
+      <h3>Reparaciones sin asignar</h3>
       <OwlCarousel options={options}>
         {
           orders.map((item, index) => {
@@ -50,7 +44,7 @@ const UpdateCardDashboard = (props) => {
                 <div className='carousel__card_body mx-2 card-body' key={index}>
                   <p><small>{item.category}</small></p>
                   <h5 className='card-title text-center'>{item.brandAndModel}</h5>
-                  <Link to={{ pathname: '/solicitud-reparacion-reparador', data: item }}><Button text='Detalle' /></Link>
+                  <Link to={{ pathname: '/solicitud-reparacion', data: item }}><Button text='Detalle' /></Link>
                 </div>
               )
             }
