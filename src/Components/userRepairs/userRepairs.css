@@ -1,6 +1,7 @@
 .principal-cards-container {
   flex-wrap: wrap;
   justify-content: space-between;
+  height: 25rem;
 }
 
 .principal__body {

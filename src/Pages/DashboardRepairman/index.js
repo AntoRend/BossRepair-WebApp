@@ -14,7 +14,7 @@ function RepairView () {
 
   useEffect(() => {
     userRender()
-  })
+  }, [])
 
   const userRender = async () => {
     const responseUser = await axios.get(`http://localhost:8080/repairmen/${userId}`)

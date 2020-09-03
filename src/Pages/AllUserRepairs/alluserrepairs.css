@@ -1,0 +1,15 @@
+.all_principal__body {
+  width: 30%;
+}
+
+.all_principal_container {
+  flex-wrap: wrap;
+}
+
+.all_principal__title {
+  height: 3rem;
+}
+
+.all_principal__status {
+  height: 3rem;
+}

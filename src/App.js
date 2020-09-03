@@ -21,6 +21,7 @@ import RequestConsultTwo from './Pages/RequestConsultUserTwo'
 import RequestConsultRepairman from './Pages/RequestConsultRepairman'
 import RepairmanView from './Pages/DashboardRepairman'
 import UserView from './Pages/DashboardUser'
+import AllUserRepairs from './Pages/AllUserRepairs'
 
 // Mau
 import RegisterRepair from './Pages/RegisterRepair'
@@ -87,6 +88,9 @@ export default class App extends React.Component {
             userIsLoggedIn
               ? <Switch>
                 <Route
+                  exact path='/reparaciones' component={AllUserRepairs}
+                />
+                <Route
                   exact path='/solicitud-reparacion-reparador' component={RequestConsultRepairman}
                 />
                 <Route
@@ -125,7 +129,7 @@ export default class App extends React.Component {
                   exact path='/reparador/cotizacion/id' component={() =>
                     <Quote userData={userData} />}
                 />
-              </Switch> : null
+                </Switch> : null
           }
           <br />
           <Footer />
