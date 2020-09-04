@@ -16,11 +16,7 @@ const RepairInfo = () => {
           Sé parte de este gran grupo.
           </h3>
           <br />
-<<<<<<< HEAD
-          <Button className="resp" text='UNETE' />
-=======
           <Link to='/registro-reparador'><Button text='UNETE' /></Link>
->>>>>>> b63891cfade57d48b826c425c877b4e5ab59d4db
         </div>
       </Col>
     </Row>
