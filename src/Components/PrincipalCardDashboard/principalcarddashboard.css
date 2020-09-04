@@ -1,4 +1,17 @@
-.principal-cards-container {
+
+
+@media (min-width: 576px) {
+ 
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+/* .principal-cards-container {
   flex-wrap: wrap;
   justify-content: space-between;
   height: 25rem;
@@ -14,4 +27,6 @@
 .principal .text-cards {
   font-size: 1rem !important;
   padding: 0 !important;
+} */
+
 }

@@ -9,14 +9,14 @@ const RepairInfo = () => {
       <Col className='col-md-6'>
         <div className='repair__info_text'>
           <h3 className='title-repair'>
-           ! Únete como reparador y amplía tus horizontes !
+           ¡Únete como reparador y amplía tus horizontes!
           </h3>
-          <br />
-          <h3 className='card-text-t'>
+          <div className='d-flex align-items-center flex-column'>
+            <h3 className='card-text-t'>
           Sé parte de este gran grupo.
-          </h3>
-          <br />
-          <Link to='/registro-reparador'><Button text='UNETE' /></Link>
+            </h3>
+            <Link to='/registro-reparador'><Button text='UNETE' /></Link>
+          </div>
         </div>
       </Col>
     </Row>

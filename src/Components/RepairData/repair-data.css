@@ -1,0 +1,26 @@
+.info_content {
+  border-radius: 12px;
+  box-shadow: 6px 4px 5px rgba(0, 0, 0, 0.09);
+  background-color: none;
+}
+
+
+.info_repair {
+  /* border-bottom: 2px solid #EB5424; */
+  padding-bottom: 10px;
+}
+
+.divider {
+  background-color: #EB5424;
+  width: 50%;
+}
+
+.info_content:hover .divider {
+  width: 90%;
+  transition: all ease 0.5s;
+}
+
+.image_consult {
+  height: 40rem;
+  object-fit: contain;
+}

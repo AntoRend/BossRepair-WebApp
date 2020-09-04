@@ -13,8 +13,9 @@ import {
 import RepairButton from '../RepairRequest'
 import PopoverLogin from '../popoverLogin'
 
-//css
-import '../../Pages/Home/Home.css'
+// css
+// import '../../Pages/Home/Home.css'
+import './nav.css'
 
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -27,11 +28,11 @@ const NavBar = (props) => {
   return (
     <div>
       <Navbar color='light' light expand='md'>
-        <NavbarBrand className="logo-all" href='/'>BossRepair</NavbarBrand>
+        <NavbarBrand className='nav__logo' href='/'>BossRepair</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse className='justify-content-end' isOpen={isOpen} navbar>
-          <Nav className='' navbar>
-            <UncontrolledDropdown className='mr-4' nav inNavbar>
+          <Nav className='nav_bar__container' navbar>
+            {/* <UncontrolledDropdown className='mr-4' nav inNavbar>
               <DropdownToggle nav caret>
                 Categorías
               </DropdownToggle>
@@ -50,8 +51,8 @@ const NavBar = (props) => {
                   Others
                 </DropdownItem>
               </DropdownMenu>
-            </UncontrolledDropdown>
-            <RepairButton />
+            </UncontrolledDropdown> */}
+            <RepairButton class='nav_bar' />
             <PopoverLogin />
           </Nav>
         </Collapse>

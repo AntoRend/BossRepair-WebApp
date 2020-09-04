@@ -1,0 +1,35 @@
+.nav__logo {
+  font-family: 'Roboto Slab', serif;
+  margin-left: 1rem;
+  margin-top: 2px;
+}
+ .nav_bar__container div .boton-h {
+   text-align: center !important;
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .nav__logo {
+    margin-left: 1rem;
+  }
+  .navbar-nav {
+
+  }
+  .profile-container {
+    width: 15%;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* background-color: whitesmoke; */
+
+  .nav_bar__container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0px;
+  }
+}
