@@ -7,8 +7,8 @@ const UserInfo = () => {
       <Container>
         <Row>
           <Col className="user__info_text">
-            <h2 className="text-cards">
-              Rapido y sencillo !
+            <h2 className="text-cards-9">
+              ¡ Rapido y sencillo !
             </h2>
             <p className="text-public">
           Todos los reparadores las 24/7 y tendran  una
