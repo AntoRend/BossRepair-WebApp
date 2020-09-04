@@ -41,7 +41,6 @@ const InfoCard = (props) => {
                 />
               </div>
             </CardBody>
-            <CardFooter className='card-response-header'>BossRepair</CardFooter>
           </Card>
         )
       })}

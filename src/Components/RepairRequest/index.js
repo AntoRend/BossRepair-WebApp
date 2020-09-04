@@ -41,7 +41,7 @@ const ModalExample = (props) => {
     const dataI = new FormData()// If file selected
     if (selectedFile) {
       dataI.append('repairImage', selectedFile, selectedFile.name)
-      const { data } = await axios.post('http://localhost:8080/images/repair-img-upload', dataI, {
+      const { data } = await axios.post('https://boss-repair-api.mybluemix.net/images/repair-img-upload', dataI, {
         headers: {
           accept: 'application/json',
           'Accept-Language': 'en-US,en;q=0.8',
@@ -67,7 +67,7 @@ const ModalExample = (props) => {
     const dataI = new FormData()// If file selected
     if (selectedFile) {
       dataI.append('repairImage', selectedFile, selectedFile.name)
-      const responseImage = await axios.post('http://localhost:8080/images/repair-img-upload', dataI, {
+      const responseImage = await axios.post('https://boss-repair-api.mybluemix.net/images/repair-img-upload', dataI, {
         headers: {
           accept: 'application/json',
           'Accept-Language': 'en-US,en;q=0.8',
@@ -77,7 +77,7 @@ const ModalExample = (props) => {
       // console.log(responseImage)
       const fetchData = { file: responseImage.data.location, ...data }
       console.log(fetchData)
-      axios.post('http://localhost:8080/repair-order/create', fetchData)
+      axios.post('https://boss-repair-api.mybluemix.net/repair-order/create', fetchData)
         .then((data) => {
           console.log(data)
           const dataMail = {
@@ -85,7 +85,7 @@ const ModalExample = (props) => {
             subject: 'Reparacion registrada',
             text: `Hola! Tu reparación de ${model} ha sido registrada, puedes ver el status iniciando sesión o nosotros te notificaremos cuando tengas respuestas disponibles. ¡Saludos!`
           }
-          axios.post('http://localhost:8080/emails/', dataMail)
+          axios.post('https://boss-repair-api.mybluemix.net/emails/', dataMail)
           swal({
             title: 'Listo!',
             text: 'Tu reparación ha sido publicada, te notificaremos a tu correo cuando tengas respuestas',

@@ -14,7 +14,7 @@ const PrincipalCardDashboard = (props) => {
   }, [])
 
   const ordersRequest = async () => {
-    const repairs = await axios.get('http://localhost:8080/repair-order/')
+    const repairs = await axios.get('https://boss-repair-api.mybluemix.net/repair-order/')
     const data = repairs.data.data.allOrderRepair
     // console.log(data)
     orders(data)
@@ -26,12 +26,13 @@ const PrincipalCardDashboard = (props) => {
         dataOrders.map((e, index) => {
           if (e.status === 'Activa') {
             return (
-              <div className='card-body principal__body col-5' key={index}>
+              <div className='card-body principal__body ' key={index}>
                 <h5 className='principal__title card-title text-ali'>{e.brandAndModel}</h5>
-                <hr className='solid-divi-cards' />
-
-                <p className=''>{e.status}</p>
-                <Link to={{ pathname: '/solicitud-reparacion-reparador', data: e }}><Button text='Detalle' /></Link>
+                <hr className='' />
+                <div className='d-flex justify-content-between align-items-end'>
+                  <img src={e.file} alt='' className='image-active-card' />
+                  <Link to={{ pathname: '/solicitud-reparacion-reparador', data: e }}><Button text='Detalle' /></Link>
+                </div>
               </div>
             )
           }

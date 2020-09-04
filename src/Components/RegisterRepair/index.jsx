@@ -9,7 +9,7 @@ const RegisterRepair = () => {
   const { register, handleSubmit } = useForm()
   const onSubmit = (data) => {
     console.log(data)
-    axios.post('http://localhost:8080/repairmen/signup', data)
+    axios.post('https://boss-repair-api.mybluemix.net/repairmen/signup', data)
       .then(function (response) {
         console.log(response)
         swal({

@@ -15,7 +15,7 @@ const UserRepairs = (props) => {
 
   async function fetchData () {
     const response = await axios.get(
-    `http://localhost:8080/repair-order/info-repairs/${email}`)
+    `https://boss-repair-api.mybluemix.net/repair-order/info-repairs/${email}`)
     setPosts(response.data.data.Repairs)
   }
 
@@ -31,8 +31,8 @@ const UserRepairs = (props) => {
                   <h5 className='principal__title card-title text-ali'>{item.brandAndModel}</h5>
 
                   <hr className='' />
-                  <div className='d-flex justify-content-between'>
-                    <p className=' '>{item.status}</p>
+                  <div className='d-flex justify-content-between align-items-end'>
+                    <img src={item.file} alt='' className='image-active-card' />
                     <Link className='detail_button' to={{ pathname: '/consulta-reparacion', data: item }}><Button text='Detalle' /></Link>
                   </div>
                 </div>

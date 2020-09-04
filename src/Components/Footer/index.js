@@ -12,39 +12,39 @@ import Ubicacion from './img/Ubicacion.png'
 
 const Footer = () => {
   return (
-    <div className="back">
-      <Container className="footer-container">
-        <Row className="row-cols-2">
-          <div className="footer" />
+    <div className='back'>
+      <Container className='footer-container'>
+        <Row className='row-cols-2'>
+          <div className='footer' />
         </Row>
       </Container>
 
-      <div className="row row-cols-2">
-        <div className="col">
-          <img src={tarjetas} className="pago" alt="..." />
+      <div className='row row-cols-2'>
+        <div className='col'>
+          <img src={tarjetas} className='pago' alt='...' />
         </div>
-        <div class="col">
-          <Col className="icons-container col-md-6 col-ms-12">
-            <img className="img-modi" src={facebooki} alt="img" />
-            <img className="img-modi" src={twitter} alt="img" />
-            <img className="img-modi" src={pinterest} alt="img" />
-            <img className="img-modi" src={instagram} alt="img" />
+        <div class='col'>
+          <Col className='icons-container col-md-6 col-ms-12'>
+            <img className='img-modi' src={facebooki} alt='img' />
+            <img className='img-modi' src={twitter} alt='img' />
+            <img className='img-modi' src={pinterest} alt='img' />
+            <img className='img-modi' src={instagram} alt='img' />
           </Col>
         </div>
-      
-        <div class="col"></div>
 
-        <div class="col">
+        <div class='col' />
+
+        <div class='col'>
           {/* <hr></hr> */}
-          {/* <p className="foo">Potilica de privaciad</p> */}
+          <p className='foo'>Potilica de privaciad</p>
         </div>
       </div>
-      <hr className="border-f"></hr>
-      <div class="col">
-        <p className="foo-1-all">
+      <hr className='border-f' />
+      <div class='col'>
+        <p className='foo-1-all'>
           © 2020 Boss Repair, Inc. Todos los derechos reservados &nbsp; &nbsp;
           México
-          <img src={Ubicacion} className="ubi" alt="..." />
+          {/* <img src={Ubicacion} className='ubi' alt='...' /> */}
         </p>
       </div>
     </div>
