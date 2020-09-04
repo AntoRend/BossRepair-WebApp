@@ -62,6 +62,8 @@ const ModalExample = (props) => {
   // funciones para formulario
   const { register, handleSubmit } = useForm()
   const onSubmit = async (data) => {
+    const emailUser = data.userEmail
+    const model = data.brandAndModel
     const dataI = new FormData()// If file selected
     if (selectedFile) {
       dataI.append('repairImage', selectedFile, selectedFile.name)
@@ -78,9 +80,15 @@ const ModalExample = (props) => {
       axios.post('http://localhost:8080/repair-order/create', fetchData)
         .then((data) => {
           console.log(data)
+          const dataMail = {
+            to: emailUser,
+            subject: 'Reparacion registrada',
+            text: `Hola! Tu reparación de ${model} ha sido registrada, puedes ver el status iniciando sesión o nosotros te notificaremos cuando tengas respuestas disponibles. ¡Saludos!`
+          }
+          axios.post('http://localhost:8080/emails/', dataMail)
           swal({
             title: 'Listo!',
-            text: 'Puedes consultar las respuestas a tu reparación con tu correo',
+            text: 'Tu reparación ha sido publicada, te notificaremos a tu correo cuando tengas respuestas',
             icon: 'success',
             button: 'Entendido'
           })

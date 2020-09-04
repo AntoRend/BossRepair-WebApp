@@ -21,19 +21,26 @@ const ResponseFormRepairman = (props) => {
       console.log(infoData)
       response = await axios.patch(`http://localhost:8080/repair-order/answers/${props.data._id}`, infoData)
     }
-    console.log(response.data.succes)
-    if (response.data.succes) {
+    console.log(response)
+    if (response.data.success) {
       swal({
         title: 'Listo!',
         text: 'Tu respuesta ha sido enviada',
         icon: 'success',
         button: 'Entendido'
-      }).then(() => {
-        const userRole = localStorage.getItem('userRole')
-        if (userRole === 'user') {
-          window.location.href = '/dashboard'
-        }
       })
+      const dataMail = {
+        to: 'ltonnito@gmail.com',
+        subject: '¡Tienes una respuesta!',
+        text: 'Hola! Tu reparación tiene una respuesta disponible, puedes verla iniciando sesión.'
+      }
+      axios.post('http://localhost:8080/emails/', dataMail)
+        .then(() => {
+          const userRole = localStorage.getItem('userRole')
+          if (userRole === 'user') {
+            window.location.href = '/dashboard'
+          }
+        })
     } else {
       swal({
         title: 'Ups!',
