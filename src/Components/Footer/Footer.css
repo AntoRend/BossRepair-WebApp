@@ -107,7 +107,11 @@
   margin-top: 45px !important;
 }
 
-
+.back {
+  background-color: #D0D2D3;
+  margin-top: -27px;
+  width: 107%;
+}
 
 }
 
@@ -125,11 +129,6 @@
 } */
 
 
-.back {
-  background-color: #D0D2D3;
-  margin-top: -27px;
-  width: 107%;
-}
 
 .pago {
   width: 336px;
