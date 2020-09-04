@@ -39,7 +39,7 @@ const CheckoutForm = (props) => {
       console.log('[PaymentMethod]', paymentMethod)
       const { id } = paymentMethod
       try {
-        const { data } = await axios.post('http://localhost:8080/pay/', {
+        const { data } = await axios.post('https://boss-repair-api.mybluemix.net/pay/', {
           id,
           amount: cost,
           description: repair

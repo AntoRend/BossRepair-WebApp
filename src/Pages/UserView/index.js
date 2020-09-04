@@ -1,92 +1,89 @@
 import React from 'react'
-import { Container, Row, Col, CardColumns } from "reactstrap";
+import { Container, Row, Col, CardColumns } from 'reactstrap';
 
-//css
+// css
 import './UserView.css'
 
-//img 
+// img
 import xt from '../img/xt.jpg'
 import Rp from '../img/Rp.jpg'
 import ed from '../img/ed.jpg'
 import CarlCox from '../img/Carl Cox.jpg'
 import estrellas from '../img/estrellas.png'
 
-
-function UserView() {
+function UserView () {
   return (
-    <div className="col-md-12 col-ms-12">
-      <h1 className="nameUser">Jerome Isma ea</h1>
-      <hr className="solid-divid"></hr>
+    <div className='col-md-12 col-ms-12'>
+      <h1 className='nameUser'>Jerome Isma ea</h1>
+      <hr className='solid-divid' />
 
-      <div className="container">
-        <div className="row">
-          <div className="col">
-            <div className="row row-cols-1 row-cols-md-12">
-              <div className="col mb-4 card-carl">
-                <div className="card">
+      <div className='container'>
+        <div className='row'>
+          <div className='col'>
+            <div className='row row-cols-1 row-cols-md-12'>
+              <div className='col mb-4 card-carl'>
+                <div className='card'>
                   <img
                     src={CarlCox}
-                    className="imangen-user card-img-top"
-                    alt="..."
+                    className='imangen-user card-img-top'
+                    alt='...'
                   />
-                  <div className="card-body">
-                    <p className="card-text">
+                  <div className='card-body'>
+                    <p className='card-text'>
                       Carl Cox@gmail.com
-                      <br></br>
-                      <br></br>
+                      <br />
+                      <br />
                       Domicilio:
-                      <br></br>
-                      <br></br>
+                      <br />
+                      <br />
                       Ciudad:
                     </p>
                     <img
                       src={estrellas}
-                      className="imangen-star card-img-top"
-                      alt="..."
+                      className='imangen-star card-img-top'
+                      alt='...'
                     />
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col">
-            {" "}
-            <div className="row row-cols-1 row-cols-md-12">
-              <div className="col mb-4">
-                <div className="card color-font">
-                  <div className="card-body">
-                    <h6 className="card-title text-ali">Lap Top Lenovo Gamer</h6>
-                    <p className="card-text">
-                     
-                    </p>
-                    <hr className="solid-divi-cards"></hr>
+          <div class='col'>
+            {' '}
+            <div className='row row-cols-1 row-cols-md-12'>
+              <div className='col mb-4'>
+                <div className='card color-font'>
+                  <div className='card-body'>
+                    <h6 className='card-title text-ali'>Lap Top Lenovo Gamer</h6>
+                    <p className='card-text' />
+                    <hr className='solid-divi-cards' />
 
-                    <p className="card-text"> se le incrementa la memoria ram, junto con un disco con mayor capacidad de almacenamiento</p>
+                    <p className='card-text'> se le incrementa la memoria ram, junto con un disco con mayor capacidad de almacenamiento</p>
                     <button
-                      type="button"
-                      className="user-boton btn btn-outline-danger"
+                      type='button'
+                      className='user-boton btn btn-outline-danger'
                     >
                       Danger
                     </button>
                   </div>
                 </div>
               </div>
-            </div>{" "}
-            <div className="row row-cols-1 row-cols-md-12">
-              <div className="col mb-4">
-                <div className="card color-font">
-                  <div className="card-body">
-                    <h5 className="card-title text-ali">IPhone SE</h5>
-                    <p className="card-text"></p>
-                    <hr className="solid-divi-cards"></hr>
+            </div>{' '}
+            <div className='row row-cols-1 row-cols-md-12'>
+              <div className='col mb-4'>
+                <div className='card color-font'>
+                  <div className='card-body'>
+                    <h5 className='card-title text-ali'>IPhone SE</h5>
+                    <p className='card-text' />
+                    <hr className='solid-divi-cards' />
 
-                    <p className="card-text">
+                    <p className='card-text'>
                       Se el hace cambio total de desplay, se cambia por uno
                       generico del mismo modelo
                     </p>
                     <button
-                      type="button"
-                      className="user-boton btn btn-outline-danger"
+                      type='button'
+                      className='user-boton btn btn-outline-danger'
                     >
                       Danger
                     </button>
@@ -95,23 +92,23 @@ function UserView() {
               </div>
             </div>
           </div>
-          <div class="col">
-            {" "}
-            <div className="row row-cols-1 row-cols-md-12">
-              <div className="col mb-4">
-                <div className="card color-font">
-                  <div className="card-body">
-                    <h5 className="card-title text-ali">LG K61</h5>
-                    <p className="card-text"></p>
-                    <hr className="solid-divi-cards"></hr>
+          <div class='col'>
+            {' '}
+            <div className='row row-cols-1 row-cols-md-12'>
+              <div className='col mb-4'>
+                <div className='card color-font'>
+                  <div className='card-body'>
+                    <h5 className='card-title text-ali'>LG K61</h5>
+                    <p className='card-text' />
+                    <hr className='solid-divi-cards' />
 
-                    <p className="card-text">
+                    <p className='card-text'>
                       Se cambia la pila por sobrecalentamiento y se remplaza por
-                      uno chafa{" "}
+                      uno chafa{' '}
                     </p>
                     <button
-                      type="button"
-                      className="user-boton btn btn-outline-danger"
+                      type='button'
+                      className='user-boton btn btn-outline-danger'
                     >
                       Danger
                     </button>
@@ -119,20 +116,18 @@ function UserView() {
                 </div>
               </div>
             </div>
-            <div className="row row-cols-1 row-cols-md-12">
-              <div className="col mb-4">
-                <div className="card color-font">
-                  <div className="card-body">
-                    <h5 className="card-title text-ali">Teclado Spectra-Gamer</h5>
-                    <p className="card-text">
-                      
-                    </p>
-                    <hr className="solid-divi-cards"></hr>
+            <div className='row row-cols-1 row-cols-md-12'>
+              <div className='col mb-4'>
+                <div className='card color-font'>
+                  <div className='card-body'>
+                    <h5 className='card-title text-ali'>Teclado Spectra-Gamer</h5>
+                    <p className='card-text' />
+                    <hr className='solid-divi-cards' />
 
-                    <p className="card-text">se le cambi los botones A-S-D-W por desgaste y resorte roto. Se repmplaza por genericos !</p>
+                    <p className='card-text'>se le cambi los botones A-S-D-W por desgaste y resorte roto. Se repmplaza por genericos !</p>
                     <button
-                      type="button"
-                      className="user-boton btn btn-outline-danger"
+                      type='button'
+                      className='user-boton btn btn-outline-danger'
                     >
                       Danger
                     </button>
@@ -144,61 +139,61 @@ function UserView() {
         </div>
       </div>
 
-      <h1 className="text-dep">Actualizaciones</h1>
-      <p className="color_linea"></p>
+      <h1 className='text-dep'>Actualizaciones</h1>
+      <p className='color_linea' />
       <div
-        id="carouselExampleControls"
-        class="carousel slide"
-        data-ride="carousel"
+        id='carouselExampleControls'
+        class='carousel slide'
+        data-ride='carousel'
       >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src={xt} class="d-block w-100" alt="..." />
+        <div class='carousel-inner'>
+          <div class='carousel-item active'>
+            <img src={xt} class='d-block w-100' alt='...' />
           </div>
-          <div class="carousel-item">
-            <img src={ed} class="d-block w-100" alt="..." />
+          <div class='carousel-item'>
+            <img src={ed} class='d-block w-100' alt='...' />
           </div>
-          <div class="carousel-item">
-            <img src={Rp} class="d-block w-100" alt="..." />
+          <div class='carousel-item'>
+            <img src={Rp} class='d-block w-100' alt='...' />
           </div>
         </div>
         <a
-          class="carousel-control-prev"
-          href="#carouselExampleControls"
-          role="button"
-          data-slide="prev"
+          class='carousel-control-prev'
+          href='#carouselExampleControls'
+          role='button'
+          data-slide='prev'
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
+          <span class='carousel-control-prev-icon' aria-hidden='true' />
+          <span class='sr-only'>Previous</span>
         </a>
         <a
-          class="carousel-control-next"
-          href="#carouselExampleControls"
-          role="button"
-          data-slide="next"
+          class='carousel-control-next'
+          href='#carouselExampleControls'
+          role='button'
+          data-slide='next'
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
+          <span class='carousel-control-next-icon' aria-hidden='true' />
+          <span class='sr-only'>Next</span>
         </a>
       </div>
 
-      <h1 className="text-dep">Reparaciones Abiertas</h1>
-      <div className="cards-user-3 col col-md-8">
-        <div className="col-sm-12 col-md-12">
-          <div className="card cards-user-v">
-            <div className="card-body">
-              <div className="font-text-user">
-                <h5 className="card-title">Reparaciones</h5>
+      <h1 className='text-dep'>Reparaciones Abiertas</h1>
+      <div className='cards-user-3 col col-md-8'>
+        <div className='col-sm-12 col-md-12'>
+          <div className='card cards-user-v'>
+            <div className='card-body'>
+              <div className='font-text-user'>
+                <h5 className='card-title'>Reparaciones</h5>
               </div>
-              <p className="card-text">
+              <p className='card-text'>
                 This is a simple hero unit, a simple jumbotron-style...
               </p>
-              <div className="btn-cards">
-                <button type="button" className="btn btn-danger">
+              <div className='btn-cards'>
+                <button type='button' className='btn btn-danger'>
                   Danger
                 </button>
 
-                <button type="button" className="btn btn-outline-danger">
+                <button type='button' className='btn btn-outline-danger'>
                   BTN
                 </button>
               </div>
@@ -207,28 +202,28 @@ function UserView() {
         </div>
       </div>
 
-      <div className="cards-user-3 col col-md-8">
-        <div className="col-sm-12 col-md-12">
-          <div className="card cards-user-v">
-            <div className="card-body">
-              <div className="font-text-user">
-                <h5 className="card-title">Reparaciones</h5>
+      <div className='cards-user-3 col col-md-8'>
+        <div className='col-sm-12 col-md-12'>
+          <div className='card cards-user-v'>
+            <div className='card-body'>
+              <div className='font-text-user'>
+                <h5 className='card-title'>Reparaciones</h5>
               </div>
-              <p className="card-text">
+              <p className='card-text'>
                 This is a simple hero unit, a simple jumbotron-style...
               </p>
-              <div className="btn-cards-c">
+              <div className='btn-cards-c'>
                 <button
-                  className="btn-cards"
-                  type="button"
-                  className="btn btn-danger"
+                  className='btn-cards'
+                  type='button'
+                  className='btn btn-danger'
                 >
                   Danger
                 </button>
                 <button
-                  className="btn-cards"
-                  type="button"
-                  className="btn btn-outline-danger"
+                  className='btn-cards'
+                  type='button'
+                  className='btn btn-outline-danger'
                 >
                   BTN
                 </button>
@@ -238,35 +233,12 @@ function UserView() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default UserView
 
-
-
-
-
 //       </Container>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // <div className="row justify-content-between">
 //         <div className="col-4 color-1">

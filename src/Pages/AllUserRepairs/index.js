@@ -17,7 +17,7 @@ const AllUserRepairs = (props) => {
     userEmail = userEmail.substring(1)
     // console.log(userEmail)
     const response = await axios.get(
-    `http://localhost:8080/repair-order/info-repairs/${userEmail}`)
+    `https://boss-repair-api.mybluemix.net/repair-order/info-repairs/${userEmail}`)
     setPosts(response.data.data.Repairs)
   }
 

@@ -55,14 +55,14 @@ export default class App extends React.Component {
     const role = localStorage.getItem('userRole')
     const id = localStorage.getItem('userID')
     if (role === 'user') {
-      const data = await axios.get(`http://localhost:8080/users/${id}`)
+      const data = await axios.get(`https://boss-repair-api.mybluemix.net/users/${id}`)
       // console.log(data.data.data.User)
       this.setState({
         userIsLoggedIn: true,
         userData: data.data.data.User
       })
     } else {
-      const data = await axios.get(`http://localhost:8080/repairmen/${id}`)
+      const data = await axios.get(`https://boss-repair-api.mybluemix.net/repairmen/${id}`)
       // console.log(data.data.data.Repairman)
       this.setState({
         userIsLoggedIn: true,
@@ -129,7 +129,7 @@ export default class App extends React.Component {
                   exact path='/reparador/cotizacion/id' component={() =>
                     <Quote userData={userData} />}
                 />
-                </Switch> : null
+              </Switch> : null
           }
           <br />
           <Footer />

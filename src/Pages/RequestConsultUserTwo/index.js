@@ -39,7 +39,7 @@ const RequestConsult = (props) => {
       .then(async (willDelete) => {
         if (willDelete) {
           const data = { status: 'Finalizada' }
-          const res = await axios.patch(`http://localhost:8080/repair-order/${repair._id}`, data)
+          const res = await axios.patch(`https://boss-repair-api.mybluemix.net/repair-order/${repair._id}`, data)
           if (res.data.success) {
             swal('¡Poof! ¡Tu reparación ha sido finalizada!', {
               icon: 'success'

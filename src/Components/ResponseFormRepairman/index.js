@@ -16,10 +16,10 @@ const ResponseFormRepairman = (props) => {
     var response = {}
     if (props.data.status === 'Activa') {
       console.log(infoData)
-      response = await axios.patch(`http://localhost:8080/repair-order/updates/${props.data._id}`, infoData)
+      response = await axios.patch(`https://boss-repair-api.mybluemix.net/repair-order/updates/${props.data._id}`, infoData)
     } else {
       console.log(infoData)
-      response = await axios.patch(`http://localhost:8080/repair-order/answers/${props.data._id}`, infoData)
+      response = await axios.patch(`https://boss-repair-api.mybluemix.net/repair-order/answers/${props.data._id}`, infoData)
     }
     console.log(response)
     if (response.data.success) {
@@ -34,7 +34,7 @@ const ResponseFormRepairman = (props) => {
         subject: '¡Tienes una respuesta!',
         text: 'Hola! Tu reparación tiene una respuesta disponible, puedes verla iniciando sesión.'
       }
-      axios.post('http://localhost:8080/emails/', dataMail)
+      axios.post('https://boss-repair-api.mybluemix.net/emails/', dataMail)
         .then(() => {
           const userRole = localStorage.getItem('userRole')
           if (userRole === 'user') {
