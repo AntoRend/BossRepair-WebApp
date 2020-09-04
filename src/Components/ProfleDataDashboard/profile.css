@@ -1,0 +1,39 @@
+
+
+.profile__image {
+  height: 11rem;
+  width: 11rem;
+  object-fit: cover;
+}
+
+.profile__image:hover {
+  transform: scale(1.1);
+  transition: all ease (0.8s);
+}
+
+.profile__data {
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+.profile__data {
+  text-align: initial;
+  margin-left: 30%;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+.profile__data {
+  text-align: initial;
+  margin-left: 30%;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+.profile__data {
+  text-align: initial;
+  margin-left: 30%;
+  }
+}

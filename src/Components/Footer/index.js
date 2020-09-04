@@ -8,7 +8,7 @@ import twitter from './img/twitter.png'
 import pinterest from './img/Pinterest.png'
 import instagram from './img/instagram.png'
 import tarjetas from './img/tarjetas.png'
-import Ubicacion from './img/Ubicacion.png'
+// import Ubicacion from './img/Ubicacion.png'
 
 const Footer = () => {
   return (
@@ -44,11 +44,11 @@ const Footer = () => {
         <p className="foo-1-all">
           © 2020 Boss Repair, Inc. Todos los derechos reservados &nbsp; &nbsp;
           México
-          <img src={Ubicacion} className="ubi" alt="..." />
+          {/* <img src={Ubicacion} className="ubi" alt="..." /> */}
         </p>
       </div>
     </div>
-  );
+  )
 }
 
 export default Footer

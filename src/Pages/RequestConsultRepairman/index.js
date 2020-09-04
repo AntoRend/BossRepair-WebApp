@@ -34,12 +34,22 @@ const RequestConsult = (props) => {
     })
       .then(async (willDelete) => {
         if (willDelete) {
-          const data = { status: 'Finalizada' }
-          const res = await axios.patch(`http://localhost:8080/repair-order/${repair._id}`, data)
+          const dataMail = {
+            to: 'ltonnito@gmail.com',
+            subject: '¡Tu reparador a finalizado la reparación!',
+            text: 'Hola! Tu reparación ha sido finalizada, por favor entra a la app para confirmarlo y calificar a tu reparador.'
+          }
+          const res = await axios.post('http://localhost:8080/emails/', dataMail)
           if (res.data.success) {
-            swal('¡Poof! ¡Tu reparación ha sido finalizada!', {
+            swal('¡Gracias! hemos notificado al usuario', {
               icon: 'success'
             })
+              .then(() => {
+                const userRole = localStorage.getItem('userRole')
+                if (userRole === 'user') {
+                  window.location.href = '/dashboard'
+                }
+              })
           } else {
             swal('Ups!', 'Intentalo de nuevo', 'error')
           }

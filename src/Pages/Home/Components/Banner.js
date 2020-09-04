@@ -18,7 +18,7 @@ const Banner = () => {
           mejores y más sercanos a tu domicilio y asi no tendras que salir de la
           comodidad de tu casa y aplicar <span>QUEDATE EN CASA !</span>{" "} */}
         </p>
-        <div className='repair-button d-flex justify-content-between'>
+        <div className='repair-button d-flex flex-column align-items-start '>
           <p className='text-center'>
             <span>Publica tu reparación</span>
           </p>

@@ -12,9 +12,6 @@ import Profile from './img/usuario.svg'
 import ButtonBR from '../Button'
 import './popoverLogin.css'
 
-// css
-import '../../Pages/Home/Home.css'
-
 const Login = (props) => {
   const [popoverOpen, setPopoverOpen] = useState(false)
   const toggle = () => setPopoverOpen(!popoverOpen)
@@ -96,7 +93,7 @@ const Login = (props) => {
           <DropdownItem>
             {redirection()}
           </DropdownItem>
-          <DropdownItem>
+          <DropdownItem className='logout__container'>
             <button className='logout' onClick={LogOut}>Cerrar sesión</button>
           </DropdownItem>
         </div>
@@ -105,9 +102,9 @@ const Login = (props) => {
   }
 
   return (
-    <div>
+    <div className='profile__container'>
       <button class='profile-icon' id='PopoverFocus' type='button'>
-        <img width='50%' src={Profile} alt='profile' />
+        <img src={Profile} alt='profile' />
       </button>
       <Popover placement='bottom' isOpen={popoverOpen} target='PopoverFocus' toggle={toggle}>
         {userLogged()}

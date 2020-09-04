@@ -1,4 +1,12 @@
 
 .carousel__card_body {
   height: 12rem;
+  border-radius: 12px;
+  box-shadow: 6px 4px 5px rgba(0, 0, 0, 0.09);
+  background-color: #ecf3f7 !important;
+}
+
+.carousel__card_body:hover {
+  box-shadow: none;
+  transition: all ease 0.35s;
 }

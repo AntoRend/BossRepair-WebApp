@@ -11,7 +11,7 @@ const LastCardDashboard = () => {
   }, [])
 
   const ordersRequest = async () => {
-    const repairs = await axios.get('http://localhost:8080/repair-order/')
+    const repairs = await axios.get('https://boss-repair-api.mybluemix.net/repair-order/')
     const data = repairs.data.data.allOrderRepair
     // data.map(({ answers }, index) => {
     //   answers.map((e) => {

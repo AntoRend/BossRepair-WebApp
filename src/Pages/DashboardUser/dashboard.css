@@ -5,6 +5,21 @@
 }
 
 .name-container h1 {
-  border-bottom: 2px solid #EB5424;
+  /* border-bottom: 1px solid #EB5424; */
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-family: 'CircularStd', 'Circular-cyr', Montserrat, sans-serif !important;
+  font-size: 2rem;
   text-align: initial;
+}
+
+@media (min-width: 576px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  
 }

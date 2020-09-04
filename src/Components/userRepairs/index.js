@@ -21,7 +21,7 @@ const UserRepairs = (props) => {
 
   return (
     <div>
-      <h3>Reparaciones Activas</h3>
+      <h3 className='title_activas'>Reparaciones Activas</h3>
       <div className='d-md-flex principal-cards-container'>
         {
           cards.map((item, index) => {
@@ -31,16 +31,18 @@ const UserRepairs = (props) => {
                   <h5 className='principal__title card-title text-ali'>{item.brandAndModel}</h5>
 
                   <hr className='' />
-                  <p className=' '>{item.status}</p>
-                  <Link to={{ pathname: '/consulta-reparacion', data: item }}><Button text='Detalle' /></Link>
+                  <div className='d-flex justify-content-between'>
+                    <p className=' '>{item.status}</p>
+                    <Link className='detail_button' to={{ pathname: '/consulta-reparacion', data: item }}><Button text='Detalle' /></Link>
+                  </div>
                 </div>
               )
             }
           })
         }
-        <div>
-          <Link to={{ pathname: '/reparaciones', search: email }}>Ver más...</Link>
-        </div>
+      </div>
+      <div className='d-flex justify-content-end'>
+        <Link to={{ pathname: '/reparaciones', search: email }}>Ver más...</Link>
       </div>
     </div>
   )

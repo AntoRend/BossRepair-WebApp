@@ -13,19 +13,17 @@ const BenefitsList = () => {
       </row> */}
       <Row>
         <Col className='benefits_text'>
-          <br />
 
-          <h2 className='text-cards'>
+          <h2 className='text-cards text-repair-l mb-5 mt-3'>
             Tenemos la satisfacción de todos nuestros usuarios y reparadores{' '}
           </h2>
-          <p> </p>
         </Col>
       </Row>
       <Row>
-        <Col className='respon benefits_list d-md-flex justify-content-between'>
+        <div className='col-12 col-md-4'>
           <div className='card b'>
             <img src={sel} className=' card-img-top-f' alt='...' />
-            <div className='card-body'>
+            <div className='card-body d-flex flex-column justify-content-between'>
               <h4 className='card-title'>Nuestros Usuarios</h4>
 
               <p class='text-cards-2'>
@@ -33,9 +31,11 @@ const BenefitsList = () => {
               </p>
             </div>
           </div>
-          <div className='card b'>
-            <img src={repar} className='card-img-top' alt='...' />
-            <div className='card-body'>
+        </div>
+        <div className='col-12 col-md-4'>
+          <div className='card b '>
+            <img src={repar} className='card-img-top-f' alt='...' />
+            <div className='card-body d-flex flex-column justify-content-between'>
               <h4 className='card-title'>Nuestros Reparadores</h4>
 
               <p className='text-cards-2'>
@@ -43,9 +43,11 @@ const BenefitsList = () => {
               </p>
             </div>
           </div>
-          <div className='card b' >
-            <img src={images} className='card-img-top' alt='...' />
-            <div className='card-body'>
+        </div>
+        <div className='col-12 col-md-4'>
+          <div className='card b '>
+            <img src={images} className='card-img-top-f' alt='...' />
+            <div className='card-body d-flex flex-column justify-content-between'>
               <h4 className='card-title'>Nosotros</h4>
 
               <p className='text-cards-2'>
@@ -53,7 +55,7 @@ const BenefitsList = () => {
               </p>
             </div>
           </div>
-        </Col>
+        </div>
       </Row>
     </Container>
   )

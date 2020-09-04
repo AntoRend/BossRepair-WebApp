@@ -8,6 +8,8 @@ import { loadStripe } from '@stripe/stripe-js'
 import Stripe from '../Stripe'
 import { CardElement, Elements, useElements, useStripe } from '@stripe/react-stripe-js'
 
+import './quotemodal.css'
+
 const QuotationModal = (props) => {
   const {
     className
@@ -53,7 +55,7 @@ const QuotationModal = (props) => {
 
   return (
     <div>
-      <Button color='danger' onClick={toggle}>Ver detalle</Button>
+      <button className='secondary-button' onClick={toggle}>Ver detalle</button>
       <Modal
         isOpen={modal} modalTransition={{ timeout: 700 }} backdropTransition={{ timeout: 1300 }}
         toggle={toggle} className={className + 'modal-lg'}
@@ -62,13 +64,13 @@ const QuotationModal = (props) => {
           <h4>Respuesta</h4>
           <p>{props.repair}</p>
         </ModalHeader>
-        <ModalBody className='d-md-flex'>
+        <ModalBody className='d-md-flex quote-body'>
           <div className='data-quote'>
             <h5>Formulario de Pago</h5>
             <p><small>Si deseas que el reparador vaya a tu domicilio</small></p>
-            <Form onSubmit={handleSubmit(onSubmit)}>
-              <div class='form-group form-check'>
-                <input type='checkbox' class='form-check-input' name='homeRepair' id='exampleCheck1' ref={register} />
+            <Form className='m-0' onSubmit={handleSubmit(onSubmit)}>
+              <div class='form-group form-check quote-form'>
+                <input type='checkbox' class='form-check-input quote-checkbox' name='homeRepair' id='exampleCheck1' ref={register} />
                 <label class='form-check-label' for='exampleCheck1'>Reparación en casa</label>
               </div>
               <Elements stripe={stripePromise}>
