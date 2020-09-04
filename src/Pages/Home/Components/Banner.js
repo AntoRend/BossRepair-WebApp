@@ -8,7 +8,7 @@ const Banner = () => {
   // let userEmail = {}
 
   return (
-    <div className='banner d-md-flex my-5'>
+    <div className='banner d-md-flex '>
       <Col className='col-12 col-md-5 banner_info'>
         <h1 className='text-landing'>Revive ese aparato que siempre quisiste y no podías reparar</h1>
         <p className='text-public'>Publica tu falla y obtén una respuesta inmediata de nuestros reparadores, que esperas, publica ya !!!
@@ -18,7 +18,7 @@ const Banner = () => {
           mejores y más sercanos a tu domicilio y asi no tendras que salir de la
           comodidad de tu casa y aplicar <span>QUEDATE EN CASA !</span>{" "} */}
         </p>
-        <div className='repair-button d-flex justify-content-between'>
+        <div className='repair-button d-flex flex-column align-items-start '>
           <p className='text-center'>
             <span>Publica tu reparación</span>
           </p>

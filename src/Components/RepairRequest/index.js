@@ -114,7 +114,7 @@ const ModalExample = (props) => {
     <div>
       <ButtonBR
         onClick={toggle}
-        text='Repara'
+        text='Publica'
       />
       {/* <Button color='danger' onClick={toggle}>{buttonLabel}</Button> */}
       <Modal isOpen={modal} toggle={toggle} className={`${className} modal-dialog modal-lg`}>

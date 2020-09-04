@@ -1,0 +1,28 @@
+.card-response-container {
+  border-radius: 12px;
+  box-shadow: 6px 4px 5px rgba(0, 0, 0, 0.09);
+  background-color: #ecf3f7 !important;
+  margin-bottom: 10px;
+}
+
+.card-response-info {
+  text-align: initial;
+}
+
+.icon-walk {
+  width: 3%;
+}
+
+.cost-label {
+  height: 3.5rem;
+  width: 15%;
+}
+
+.card-response-body {
+  background-color: white !important;
+}
+
+.card-response-header {
+  background-color: #f6f9fc !important;
+} 
+

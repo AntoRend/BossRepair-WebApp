@@ -3,48 +3,25 @@ import { Container, Row, Col } from 'reactstrap'
 
 import './Footer.css'
 
-import Facebook from './img/facebook 1.png'
-import Twitter from './img/Twitter 1.png'
-import pinterest from './img/pinterest 1.png'
-import instagram from './img/instagram 1.png'
-import stripe from './img/stripe.png'
+import facebook from './img/facebook.svg'
+import linkedin from './img/linkedin.svg'
+import twitter from './img/twitter.svg'
+import youtube from './img/youtube.svg'
 
 const Footer = () => {
   return (
-    <div className="back">
-      <Container className="footer-container">
-        <Row className="row-cols-2">
-          <div className="footer" />
-        </Row>
-      </Container>
-     
-        <div className="row row-cols-2">
-          <div className="col">
-            <img src={stripe} className="pago" alt="..." />
-          </div>
-          <div class="col">
-            <Col className="icons-container col-md-6 col-ms-12">
-              <img className="img-modi" src={Facebook} alt="img" />
-              <img className="img-modi" src={Twitter} alt="img" />
-              <img className="img-modi" src={pinterest} alt="img" />
-              <img className="img-modi" src={instagram} alt="img" />
-            </Col>
-          </div>
-          <div class="col"></div>
-
-          <div class="col">
-            {/* <hr></hr> */}
-            {/* <p className="foo">Potilica de privaciad</p> */}
-          </div>
+    <div className='footer container'>
+      <div className='footer__info'>
+        <div className='footer__icons'>
+          <img className='footer_icon' src={facebook} alt='fb' />
+          <img className='footer_icon' src={linkedin} alt='link' />
+          <img className='footer_icon' src={twitter} alt='twt' />
+          <img className='footer_icon' src={youtube} alt='yt' />
         </div>
-        <div class="col">
-          <p className="foo-1-all">
-            @2020 BOSS REPAIR Todos los derechos reservados C.D.M.X
-          </p>
-        </div>
-   
+        <p>©BossRepair 2020</p>
+      </div>
     </div>
-  );
+  )
 }
 
 export default Footer

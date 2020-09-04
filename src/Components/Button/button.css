@@ -15,3 +15,21 @@
     background: white;
     color: #444447 !important;
   }
+
+  .secondary-button {
+    color: #444447 !important;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 1px 20px;
+    background-color: transparent;
+    border: 2px solid;
+    border-color: #EB5424;
+    transition: all 1s ease;
+    position: relative;
+  }
+
+  .secondary-button:hover {
+    background-color: #EB5424 !important;
+    color: whitesmoke !important;
+  }

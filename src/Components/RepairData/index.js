@@ -9,31 +9,30 @@ const RepairData = (props) => {
   return (
     <div className='repair_data col-12 my-5'>
       <div className='repair_data__text'>
-        <h3>Reparación</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <h3 className='title_activas mb-3 mr-4'>Reparación</h3>
       </div>
       <div className='repair_data__description'>
         <div className='first_data d-md-flex'>
-          <div className='col-12 col-md-6'>
+          <div className='col-12 col-md-6 d-flex flex-column justify-content-center info_content'>
             <div className='info_label'>
               <h5>Marca & modelo</h5>
-              <p className='list-group-item'>{props.data.brandAndModel}</p>
+              <p className='info_repair'>{props.data.brandAndModel}</p>
+              <hr className='divider' />
             </div>
 
             <div className='info_label'>
               <h5>Categoría</h5>
-              <p className='list-group-item'>{props.data.category}</p>
+              <p className='info_repair'>{props.data.category}</p>
+              <hr className='divider' />
+            </div>
+            <div className='info_label'>
+              <h5>Descripción de la falla</h5>
+              <p className='info_repair'>{props.data.problemDescription}</p>
+              <hr className='divider' />
             </div>
           </div>
           <div className='repair_data__img col-12 col-md-6'>
-            <figure><img src={props.data.file} alt='' className='img-thumbnail' /></figure>
-          </div>
-        </div>
-
-        <div className='second_data d-md-flex'>
-          <div className='info_label col-12 col-md-7'>
-            <h5>Descripción de la falla</h5>
-            <p className='list-group-item'>{props.data.problemDescription}</p>
+            <img src={props.data.file} alt='' className='img-thumbnail image_consult' />
           </div>
         </div>
       </div>

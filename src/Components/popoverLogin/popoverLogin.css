@@ -11,14 +11,39 @@
   background-color: transparent;
   border: none;
   box-shadow: none;
+  outline: none;
+}
+
+.profile-icon:focus {
+  outline: none;
+}
+
+.profile-icon img {
+  width: 25%;
+}
+
+.logout__container {
+  background-color: whitesmoke !important;
+  padding-bottom: 10px;
 }
 
 .logout {
+  padding-bottom: 10px;
   background: none;
   color: black;
   font-weight: 100;
   border: none;
   box-shadow: none;
+  font-size: 20.25px !important;
+  line-height: 32px !important;
+  font-family: 'CircularStd',
+  'Circular-cyr',
+  Montserrat,
+  sans-serif !important;
+  color: #001E30 !important;
+  font-weight: 400;
+  letter-spacing: 0px !important;
+  
 }
 
 .logout:hover {
@@ -27,4 +52,26 @@
   font-weight: 100;
   border: none;
   box-shadow: none;
+}
+
+@media (min-width: 768px) {
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .profile__container {
+      width: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .profile-icon {
+      width: auto;
+    }
+    .profile-icon img {
+      width: 100%;
+      margin-left: 1rem;
+    }
+
 }

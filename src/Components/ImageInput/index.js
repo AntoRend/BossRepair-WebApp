@@ -22,7 +22,7 @@ export default class ImageInput extends Component {
     const data = new FormData();// If file selected
     if ( this.state.selectedFile ) {
       data.append( 'repairImage', this.state.selectedFile, this.state.selectedFile.name );
-      axios.post( 'http://localhost:8080/images/repair-img-upload', data, {
+      axios.post( 'https://boss-repair-api.mybluemix.net/ºimages/repair-img-upload', data, {
       headers: {
        'accept': 'application/json',
        'Accept-Language': 'en-US,en;q=0.8',

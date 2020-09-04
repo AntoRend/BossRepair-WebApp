@@ -34,16 +34,18 @@ const UpdateCardDashboard = (props) => {
   }
 
   return (
-    <Col className=''>
-      <h3>Reparaciones sin asignar</h3>
+    <div className=''>
+      <h3 className='title_activas'>Reparaciones sin asignar</h3>
       <OwlCarousel options={options}>
         {
           orders.map((item, index) => {
             if (item.status === 'Sin respuesta' || item.status === 'Cotizaciones disponibles') {
               return (
-                <div className='carousel__card_body mx-2 card-body' key={index}>
-                  <p><small>{item.category}</small></p>
-                  <h5 className='card-title text-center'>{item.brandAndModel}</h5>
+                <div className='carousel__card_body mx-2 card-body d-flex flex-column justify-content-between' key={index}>
+                  <div>
+                    <p><small>{item.category}</small></p>
+                    <h5 className='card-title text-center'>{item.brandAndModel}</h5>
+                  </div>
                   <Link to={{ pathname: '/solicitud-reparacion', data: item }}><Button text='Detalle' /></Link>
                 </div>
               )
@@ -51,7 +53,7 @@ const UpdateCardDashboard = (props) => {
           })
         }
       </OwlCarousel>
-    </Col>
+    </div>
   )
 }
 
