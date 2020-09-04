@@ -32,11 +32,11 @@ const Footer = () => {
           </Col>
         </div>
 
-        <div class='col' />
+        <div className='padi col'></div>
 
-        <div class='col'>
+        <div className='col'>
           {/* <hr></hr> */}
-          <p className='foo'>Potilica de privaciad</p>
+        
         </div>
       </div>
       <hr className='border-f' />

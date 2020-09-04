@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
 
 
 .banner_info {
@@ -357,14 +357,7 @@ img {
   padding-top: 20px;
 }
 
-.pago {
-  width: 100px;
-  height: 100px;
-  margin: auto;
-  margin-left: 130px;
-  /* margin: auto; */
-  margin-top: 20px;
-}
+
 
 /* -------------------------POPOVERLOGIN---------------------*/
 
