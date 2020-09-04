@@ -21,15 +21,30 @@ const QuotationModal = (props) => {
   // console.log(props)
   const { register, handleSubmit } = useForm()
   const onSubmit = (data) => {
+    const { homeRepair } = data
     const infoData = {
       status: 'Activa',
       idRepairmanResponse: props.data.idRepairman,
-      homeRepair: data.homeRepair
+      homeRepair: homeRepair
     }
     // console.log(infoData)
     axios.patch(`http://localhost:8080/repair-order/${props._id}`, infoData)
       .then((data) => {
-        // console.log(data)
+        if (homeRepair) {
+          const dataMail = {
+            to: 'ltonnito@gmail.com',
+            subject: '¡Tu reparador ha sido asignado!',
+            text: 'Podrás ver las actualizaciones desde tu perfil'
+          }
+          axios.post('http://localhost:8080/emails/', dataMail)
+        } else {
+          const dataMail = {
+            to: 'repairman@test.com',
+            subject: '¡Tienes una reparación!',
+            text: 'Hola! Tu reparación tiene una respuesta disponible, puedes verla iniciando sesión.'
+          }
+          axios.post('http://localhost:8080/emails/', dataMail)
+        }
       })
       .catch((error) => {
 
