@@ -37,7 +37,7 @@ function RepairView () {
         </Col>
       </Row>
       {/* <Row> */}
-      <hr />
+      <hr className='divider-dashboard mt-5' />
       {/* </Row> */}
       <Row>
         <UpdateCardDashboard />
