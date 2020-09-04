@@ -22,12 +22,23 @@ const UpdateCardDashboard = (props) => {
     items: 3,
     nav: true,
     rewind: true,
-    autoplay: true
+    autoplay: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 5
+      }
+    }
   }
 
   const ordersRequest = async () => {
     const response = await axios.get(
-      `http://localhost:8080/repair-order/info-repairs/${props.data.email}`)
+      `https://boss-repair-api.mybluemix.net/repair-order/info-repairs/${props.data.email}`)
     reqOrders(response.data.data.Repairs)
     // (data)
     // console.log(props)
@@ -35,7 +46,7 @@ const UpdateCardDashboard = (props) => {
 
   return (
     <div className=''>
-      <h3 className='title_activas'>Reparaciones sin asignar</h3>
+      <h3 className='title_activas mb-3 mt-5'>Reparaciones sin asignar</h3>
       <OwlCarousel options={options}>
         {
           orders.map((item, index) => {
@@ -44,7 +55,8 @@ const UpdateCardDashboard = (props) => {
                 <div className='carousel__card_body mx-2 card-body d-flex flex-column justify-content-between' key={index}>
                   <div>
                     <p><small>{item.category}</small></p>
-                    <h5 className='card-title text-center'>{item.brandAndModel}</h5>
+                    <h5 className='card-title carousel__title text-center'>{item.brandAndModel}</h5>
+                    <img src={item.file} alt='repair' className='image-active-card' />
                   </div>
                   <Link to={{ pathname: '/solicitud-reparacion', data: item }}><Button text='Detalle' /></Link>
                 </div>

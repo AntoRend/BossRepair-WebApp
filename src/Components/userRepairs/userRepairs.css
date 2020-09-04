@@ -24,6 +24,12 @@
   text-align: end;
 }
 
+.image-active-card {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+}
+
 @media (min-width: 576px) {
  
   }

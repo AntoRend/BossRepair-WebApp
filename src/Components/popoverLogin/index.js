@@ -19,7 +19,7 @@ const Login = (props) => {
   const { register, handleSubmit } = useForm()
   const onSubmit = (data) => {
     // console.log(data)
-    axios.post('http://localhost:8080/auth/login', data)
+    axios.post('https://boss-repair-api.mybluemix.net/auth/login', data)
       .then(function (response) {
         console.log(response)
         const { id, token, role } = response.data.data

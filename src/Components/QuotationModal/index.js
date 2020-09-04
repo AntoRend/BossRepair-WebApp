@@ -30,7 +30,7 @@ const QuotationModal = (props) => {
       homeRepair: homeRepair
     }
     // console.log(infoData)
-    axios.patch(`http://localhost:8080/repair-order/${props._id}`, infoData)
+    axios.patch(`https://boss-repair-api.mybluemix.net/repair-order/${props._id}`, infoData)
       .then((data) => {
         if (homeRepair) {
           const dataMail = {
@@ -38,14 +38,14 @@ const QuotationModal = (props) => {
             subject: '¡Tu reparador ha sido asignado!',
             text: 'Podrás ver las actualizaciones desde tu perfil'
           }
-          axios.post('http://localhost:8080/emails/', dataMail)
+          axios.post('https://boss-repair-api.mybluemix.net/emails/', dataMail)
         } else {
           const dataMail = {
             to: 'repairman@test.com',
             subject: '¡Tienes una reparación!',
             text: 'Hola! Tu reparación tiene una respuesta disponible, puedes verla iniciando sesión.'
           }
-          axios.post('http://localhost:8080/emails/', dataMail)
+          axios.post('https://boss-repair-api.mybluemix.net/emails/', dataMail)
         }
       })
       .catch((error) => {
@@ -55,7 +55,7 @@ const QuotationModal = (props) => {
 
   return (
     <div>
-      <button className='secondary-button' onClick={toggle}>Ver detalle</button>
+      <button className='secondary-button' onClick={toggle}>Contratar</button>
       <Modal
         isOpen={modal} modalTransition={{ timeout: 700 }} backdropTransition={{ timeout: 1300 }}
         toggle={toggle} className={className + 'modal-lg'}

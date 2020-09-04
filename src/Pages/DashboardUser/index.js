@@ -20,7 +20,7 @@ function UserView (props) {
   const userRender = async () => {
     const userId = localStorage.getItem('userID')
     const userRole = localStorage.getItem('userRole')
-    const responseUser = await axios.get(`http://localhost:8080/users/${userId}`)
+    const responseUser = await axios.get(`https://boss-repair-api.mybluemix.net/users/${userId}`)
     userRequest(responseUser.data.data.User)
     // console.log(responseUser.data.data.User)
   }
@@ -41,8 +41,7 @@ function UserView (props) {
             data={userData}
           />
         </Col>
-      </Row>
-      <Row>
+        <hr />
         <Col>
           <UpdateCardUser
             data={props.userData}

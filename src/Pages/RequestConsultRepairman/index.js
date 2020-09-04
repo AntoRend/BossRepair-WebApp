@@ -20,7 +20,7 @@ const RequestConsult = (props) => {
 
   const fetchData = async () => {
     const id = localStorage.getItem('userID')
-    const data = await axios.get(`http://localhost:8080/repairmen/${id}`)
+    const data = await axios.get(`https://boss-repair-api.mybluemix.net/repairmen/${id}`)
     userData(data.data.data.Repairman)
   }
 
@@ -39,7 +39,7 @@ const RequestConsult = (props) => {
             subject: '¡Tu reparador a finalizado la reparación!',
             text: 'Hola! Tu reparación ha sido finalizada, por favor entra a la app para confirmarlo y calificar a tu reparador.'
           }
-          const res = await axios.post('http://localhost:8080/emails/', dataMail)
+          const res = await axios.post('https://boss-repair-api.mybluemix.net/emails/', dataMail)
           if (res.data.success) {
             swal('¡Gracias! hemos notificado al usuario', {
               icon: 'success'

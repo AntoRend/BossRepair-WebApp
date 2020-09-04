@@ -8,11 +8,11 @@ const UserInfo = () => {
         <Row>
           <Col className='user__info_text'>
             <h2 className='text-cards-9'>
-              ¡ Rapido y sencillo !
+              ¡Rápido y sencillo!
             </h2>
             <p className='text-public'>
-          Todos los reparadores las 24/7 y tendran  una
-              segunda vida con nostros !
+          Todos los reparadores las 24/7. Tus aparatos tendran  una
+              segunda vida con nostros.
             </p>
           </Col>
         </Row>
@@ -20,26 +20,26 @@ const UserInfo = () => {
 
       <Row className=''>
         <Col className='user__info_cards d-md-flex justify-content-around'>
-          <div className='cards-bor step-card col-12 col-md-3 mx-1'>
+          <div className='cards-bor step-card col-12 col-md-3 mx-md-1'>
             <h6 className='pasos'>Paso 1</h6>
             <h5 className='titulo'>Publica</h5>
             <p className='text-landig'>
              ¡Sin costo alguno!
             </p>
           </div>
-          <div className='cards-bor step-card col-12 col-md-3 mx-1'>
+          <div className='cards-bor step-card col-12 col-md-3 mx-md-1'>
             <h6 className='pasos'>Paso 2</h6>
             <h5 className='titulo'>Consulta </h5>
             <p className='text-landig'>
               Cotizaciones disponibles
             </p>
           </div>
-          <div className='cards-bor step-card col-12 col-md-3 mx-1'>
+          <div className='cards-bor step-card col-12 col-md-3 mx-md-1'>
             <h6 className='pasos'>Paso 3</h6>
             <h5 className='titulo'>Contrata</h5>
-            <p className='text-landig'>Contrata </p>
+            <p className='text-landig'>La mejor opción </p>
           </div>
-          <div className='cards-bor step-card col-12 col-md-3 mx-1'>
+          <div className='cards-bor step-card col-12 col-md-3 mx-md-1'>
             <h6 className='pasos'>Paso 4</h6>
             <h5 className='titulo'>Disfruta</h5>
             <p className='text-landig'>

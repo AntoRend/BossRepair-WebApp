@@ -17,7 +17,7 @@ function RepairView () {
   }, [])
 
   const userRender = async () => {
-    const responseUser = await axios.get(`http://localhost:8080/repairmen/${userId}`)
+    const responseUser = await axios.get(`https://boss-repair-api.mybluemix.net/repairmen/${userId}`)
     // console.log(responseOrders.data.data.allOrderRepair)
     userRequest(responseUser.data.data.Repairman)
     console.log(responseUser)
@@ -36,6 +36,9 @@ function RepairView () {
           <PrincipalCardDashboard />
         </Col>
       </Row>
+      {/* <Row> */}
+      <hr />
+      {/* </Row> */}
       <Row>
         <UpdateCardDashboard />
       </Row>
