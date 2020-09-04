@@ -37,13 +37,13 @@ const UserInfo = () => {
           <div className="cards-bor step-card col-12 col-md-2">
             <h6 className="pasos">Paso 3</h6>
             <h5 className="titulo">Contrata</h5>
-            <p className="text-landig">Contrata </p>
+            <p className="text-landig">Al reparador </p>
           </div>
           <div className="cards-bor step-card col-12 col-md-2">
             <h6 className="pasos">Paso 4</h6>
             <h5 className="titulo">Disfruta</h5>
             <p className="text-landig">
-             Una segunda vida 
+             ¡Disfruta como nuevo!
             </p>
           </div>
         </Col>
