@@ -41,8 +41,9 @@ function UserView (props) {
             data={userData}
           />
         </Col>
-        <hr />
+
         <Col>
+          <hr className='divider-dashboard' />
           <UpdateCardUser
             data={props.userData}
           />
