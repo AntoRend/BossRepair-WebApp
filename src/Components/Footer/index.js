@@ -3,22 +3,49 @@ import { Container, Row, Col } from 'reactstrap'
 
 import './Footer.css'
 
-import facebook from './img/facebook.svg'
-import linkedin from './img/linkedin.svg'
-import twitter from './img/twitter.svg'
-import youtube from './img/youtube.svg'
+import facebooki from './img/facebooki.png'
+import twitter from './img/twitter.png'
+import pinterest from './img/Pinterest.png'
+import instagram from './img/instagram.png'
+import tarjetas from './img/tarjetas.png'
+import Ubicacion from './img/Ubicacion.png'
 
 const Footer = () => {
   return (
-    <div className='footer container'>
-      <div className='footer__info'>
-        <div className='footer__icons'>
-          <img className='footer_icon' src={facebook} alt='fb' />
-          <img className='footer_icon' src={linkedin} alt='link' />
-          <img className='footer_icon' src={twitter} alt='twt' />
-          <img className='footer_icon' src={youtube} alt='yt' />
+    <div className='back'>
+      <Container className='footer-container'>
+        <Row className='row-cols-2'>
+          <div className='footer' />
+        </Row>
+      </Container>
+
+      <div className='row row-cols-2'>
+        <div className='col'>
+          <img src={tarjetas} className='pago' alt='...' />
         </div>
-        <p>©BossRepair 2020</p>
+        <div class='col'>
+          <Col className='icons-container col-md-6 col-ms-12'>
+            <img className='img-modi' src={facebooki} alt='img' />
+            <img className='img-modi' src={twitter} alt='img' />
+            <img className='img-modi' src={pinterest} alt='img' />
+            <img className='img-modi' src={instagram} alt='img' />
+          </Col>
+        </div>
+
+        <div class='col' />
+
+        <div class='col'>
+          {/* <hr></hr> */}
+          <p className='foo'>Potilica de privaciad</p>
+        </div>
+      </div>
+      <hr className='border-f' />
+      <div class='col'>
+        <p className='foo-1-all'>
+          © 2020 Boss Repair, Inc. Todos los derechos reservados &nbsp; &nbsp;
+          México
+          {/* <img src={Ubicacion} className='ubi' alt='...' /> */}
+        </p>
       </div>
     </div>
   )
